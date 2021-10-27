@@ -1,0 +1,29 @@
+.layui-layout-admin .layui-header {
+    position: relative;
+}
+
+.layui-bg-gray {
+    padding: 30px;
+}
+
+.layui-card-body {
+    line-height: 45px;
+}
+
+.layui-row a {
+    width: 100%;
+    text-align: center;
+}
+
+.layui-card {
+    margin: 5px;
+}
+
+.layui-card-body .layui-row div{
+    padding: 2px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,19 @@
+server:
+  port: 9000
+
+spring:
+  datasource:
+    url: jdbc:mysql://developer/toolbox?useSSL=false&characterEncoding=UTF-8
+    username: oms
+    password: Oms2021...
+    driverClassName: com.mysql.cj.jdbc.Driver
+  security:
+    user:
+      name: caom
+      password: caom
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: cn.devzyh.toolbox.domain
+  configuration:
+    map-underscore-to-camel-case: true

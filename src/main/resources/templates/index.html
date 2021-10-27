@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title th:text="${title}">title</title>
+    <link rel="icon" href="/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/layui/css/layui.css">
+    <link rel="stylesheet" href="/assets/index/index.css">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo layui-bg-black" th:text="${title}">title</div>
+        <ul class="layui-nav layui-layout-left">
+        </ul>
+        <ul class="layui-nav layui-layout-right">
+        </ul>
+    </div>
+
+    <div class="layui-container">
+        <!-- 内容主体区域 -->
+        <div>
+            <div class="layui-bg-gray">
+                <div class="layui-row layui-col-space15">
+                    <div class="layui-row">
+                        <div class="layui-col-md6">
+                            <div class="layui-card">
+                                <div class="layui-card-header"><b>数据编辑</b></div>
+                                <div class="layui-card-body">
+                                    <div class="layui-row">
+                                        <div class="layui-col-md3 layui-col-xs6"
+                                             th:each="link: ${links.editor}">
+                                            <a th:href="${link.href}"
+                                               class="layui-btn layui-btn-normal layui-btn-radius"
+                                               th:text="${link.name}">link.ame</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-md6">
+                            <div class="layui-card">
+                                <div class="layui-card-header"><b>辅助工具</b></div>
+                                <div class="layui-card-body">
+                                    <div class="layui-row">
+                                        <div class="layui-col-md3 layui-col-xs6"
+                                             th:each="link: ${links.helper}">
+                                            <a th:href="${link.href}" target="_blank"
+                                               class="layui-btn layui-btn-normal layui-btn-radius"
+                                               th:text="${link.name}">link.ame</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="layui-row">
+                        <div class="layui-col-md6">
+                            <div class="layui-card">
+                                <div class="layui-card-header"><b>文档链接</b></div>
+                                <div class="layui-card-body">
+                                    <div class="layui-row">
+                                        <div class="layui-col-md3 layui-col-xs6"
+                                             th:each="link: ${links.document}">
+                                            <a th:href="${link.href}" target="_blank"
+                                               class="layui-btn layui-btn-normal layui-btn-radius"
+                                               th:text="${link.name}">link.ame</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-md6">
+                            <div class="layui-card">
+                                <div class="layui-card-header"><b>技术博客</b></div>
+                                <div class="layui-card-body">
+                                    <div class="layui-row">
+                                        <div class="layui-col-md3 layui-col-xs6"
+                                             th:each="link: ${links.blog}">
+                                            <a th:href="${link.href}" target="_blank"
+                                               class="layui-btn layui-btn-normal layui-btn-radius"
+                                               th:text="${link.name}">link.ame</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="layui-row">
+                        <div class="layui-card">
+                            <div class="layui-card-header"><b>友情链接</b></div>
+                            <div class="layui-card-body">
+                                <div class="layui-row">
+                                    <div class="layui-col-md3 layui-col-xs6"
+                                         th:each="link: ${links.friend}">
+                                        <a th:href="${link.href}" target="_blank"
+                                           class="layui-btn layui-btn-primary layui-border-blue layui-btn-radius"
+                                           th:text="${link.name}">link.ame</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="https://beian.miit.gov.cn/" target="_blank">鄂ICP备2021005865号</a>
+        &nbsp;&copy; 2021
+        COLLECT&nbsp;BY
+        <a href="http://www.devzyh.cn" target="_blank">DEVZYH</a>
+    </div>
+</div>
+<script src="/assets/layui/layui.js"></script>
+<script>
+    //JS
+    layui.use(['element', 'layer'], function () {
+        var element = layui.element
+            , layer = layui.layer
+            , $ = layui.$;
+    });
+</script>
+</body>
+</html>
