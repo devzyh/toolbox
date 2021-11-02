@@ -2,128 +2,94 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title th:text="${title}">title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="icon" href="/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="/assets/layui/css/layui.css">
-    <link rel="stylesheet" href="/assets/index/index.css">
+    <link rel="stylesheet" href="/assets/global/css/global.css">
 </head>
 <body>
-<div class="layui-layout layui-layout-admin">
-    <div class="layui-header">
-        <div class="layui-logo layui-bg-black" th:text="${title}">title</div>
-        <ul class="layui-nav layui-layout-left">
-        </ul>
-        <ul class="layui-nav layui-layout-right">
-        </ul>
-    </div>
 
-    <div class="layui-container">
-        <!-- 内容主体区域 -->
-        <div>
-            <div class="layui-bg-gray">
-                <div class="layui-row layui-col-space15">
-                    <div class="layui-row">
-                        <div class="layui-col-md6">
-                            <div class="layui-card">
-                                <div class="layui-card-header"><b>数据编辑</b></div>
-                                <div class="layui-card-body">
-                                    <div class="layui-row">
-                                        <div class="layui-col-md3 layui-col-xs6"
-                                             th:each="link: ${links.editor}">
-                                            <a th:href="${link.href}"
-                                               class="layui-btn layui-btn-normal layui-btn-radius"
-                                               th:text="${link.name}">link.ame</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="layui-col-md6">
-                            <div class="layui-card">
-                                <div class="layui-card-header"><b>辅助工具</b></div>
-                                <div class="layui-card-body">
-                                    <div class="layui-row">
-                                        <div class="layui-col-md3 layui-col-xs6"
-                                             th:each="link: ${links.helper}">
-                                            <a th:href="${link.href}" target="_blank"
-                                               class="layui-btn layui-btn-normal layui-btn-radius"
-                                               th:text="${link.name}">link.ame</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<div th:include="header"></div>
 
-                    <div class="layui-row">
-                        <div class="layui-col-md6">
-                            <div class="layui-card">
-                                <div class="layui-card-header"><b>文档链接</b></div>
-                                <div class="layui-card-body">
-                                    <div class="layui-row">
-                                        <div class="layui-col-md3 layui-col-xs6"
-                                             th:each="link: ${links.document}">
-                                            <a th:href="${link.href}" target="_blank"
-                                               class="layui-btn layui-btn-normal layui-btn-radius"
-                                               th:text="${link.name}">link.ame</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="layui-col-md6">
-                            <div class="layui-card">
-                                <div class="layui-card-header"><b>技术博客</b></div>
-                                <div class="layui-card-body">
-                                    <div class="layui-row">
-                                        <div class="layui-col-md3 layui-col-xs6"
-                                             th:each="link: ${links.blog}">
-                                            <a th:href="${link.href}" target="_blank"
-                                               class="layui-btn layui-btn-normal layui-btn-radius"
-                                               th:text="${link.name}">link.ame</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="layui-row">
-                        <div class="layui-card">
-                            <div class="layui-card-header"><b>友情链接</b></div>
-                            <div class="layui-card-body">
-                                <div class="layui-row">
-                                    <div class="layui-col-md3 layui-col-xs6"
-                                         th:each="link: ${links.friend}">
-                                        <a th:href="${link.href}" target="_blank"
-                                           class="layui-btn layui-btn-primary layui-border-blue layui-btn-radius"
-                                           th:text="${link.name}">link.ame</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+<div class="layui-container">
+    <table class="layui-table layui-text">
+        <tr>
+            <td colspan="3" style="text-align: center"><b>资源搜索</b></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: center">
+                <div class="layui-form layui-form-item" style="margin-bottom: 0px;">
+                    <label class="layui-form-label">
+                        <select id="searchType">
+                            <option value="article" selected="selected">文章</option>
+                        </select>
+                    </label>
+                    <div class="layui-input-block" style="padding-top: 9px;padding-right: 15px;">
+                        <input id="searchKey" type="text" placeholder="输入关键词后按回车进行搜索" class="layui-input"/>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </td>
+        </tr>
+    </table>
 
-    <div class="footer">
-        <a href="https://beian.miit.gov.cn/" target="_blank">鄂ICP备2021005865号</a>
-        &nbsp;&copy; 2021
-        COLLECT&nbsp;BY
-        <a href="http://www.devzyh.cn" target="_blank">DEVZYH</a>
-    </div>
+    <table class="layui-table layui-text">
+        <colgroup>
+            <col width="150">
+            <col>
+            <col width="60">
+        </colgroup>
+
+        <tr>
+            <td colspan="3" style="text-align: center"><b>数据编辑</b></td>
+        </tr>
+        <tr th:each="link: ${links.editor}">
+            <td th:text="${link.name}"></td>
+            <td th:text="${link.remark}"></td>
+            <td><a class="layui-btn layui-btn-xs" th:href="${link.href}" th:target="${link.target}">访问</a></td>
+        </tr>
+
+        <tr>
+            <td colspan="3" style="text-align: center"><b>辅助工具</b></td>
+        </tr>
+        <tr th:each="link: ${links.helper}">
+            <td th:text="${link.name}"></td>
+            <td th:text="${link.remark}"></td>
+            <td><a class="layui-btn layui-btn-xs" th:href="${link.href}" th:target="${link.target}">访问</a></td>
+        </tr>
+
+        <tr>
+            <td colspan="3" style="text-align: center"><b>文档链接</b></td>
+        </tr>
+        <tr th:each="link: ${links.document}">
+            <td th:text="${link.name}"></td>
+            <td th:text="${link.remark}"></td>
+            <td><a class="layui-btn layui-btn-xs" th:href="${link.href}" th:target="${link.target}">访问</a></td>
+        </tr>
+
+        <tr>
+            <td colspan="3" style="text-align: center"><b>技术博客</b></td>
+        </tr>
+        <tr th:each="link: ${links.blog}">
+            <td th:text="${link.name}"></td>
+            <td th:text="${link.remark}"></td>
+            <td><a class="layui-btn layui-btn-xs" th:href="${link.href}" th:target="${link.target}">访问</a></td>
+        </tr>
+
+        <tr>
+            <td colspan="3" style="text-align: center"><b>友情链接</b></td>
+        </tr>
+        <tr th:each="link: ${links.friend}">
+            <td th:text="${link.name}"></td>
+            <td th:text="${link.remark}"></td>
+            <td><a class="layui-btn layui-btn-xs" th:href="${link.href}" th:target="${link.target}">访问</a></td>
+        </tr>
+    </table>
 </div>
+
+<div th:include="footer"></div>
+
 <script src="/assets/layui/layui.js"></script>
-<script>
-    //JS
-    layui.use(['element', 'layer'], function () {
-        var element = layui.element
-            , layer = layui.layer
-            , $ = layui.$;
-    });
-</script>
+<script src="/assets/global/js/global.js"></script>
 </body>
 </html>

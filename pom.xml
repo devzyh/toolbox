@@ -11,7 +11,7 @@
 
     <groupId>cn.devzyh</groupId>
     <artifactId>toolbox</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.1.0</version>
     <name>toolbox</name>
     <packaging>jar</packaging>
     <description>Toolbox</description>
