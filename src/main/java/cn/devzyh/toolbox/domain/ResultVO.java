@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 搜索结果数据类
  */
-public class ResultVo implements Serializable {
+public class ResultVO implements Serializable {
 
     private static final long serialVersionUID = -3853080211929027381L;
     private String title; // 标题

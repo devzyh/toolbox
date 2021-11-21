@@ -2,8 +2,8 @@ package cn.devzyh.toolbox.service.impl;
 
 import cn.devzyh.toolbox.constant.ConfigConstant;
 import cn.devzyh.toolbox.domain.Article;
-import cn.devzyh.toolbox.domain.ResultVo;
-import cn.devzyh.toolbox.domain.SearchVo;
+import cn.devzyh.toolbox.domain.ResultVO;
+import cn.devzyh.toolbox.domain.SearchVO;
 import cn.devzyh.toolbox.mapper.ArticleMapper;
 import cn.devzyh.toolbox.service.ConfigService;
 import cn.devzyh.toolbox.service.SearchService;
@@ -27,9 +27,9 @@ public class SearchArticleServiceImpl implements SearchService {
     private ConfigService configService;
 
     @Override
-    public SearchVo search(String key) {
+    public SearchVO search(String key) {
         // 获取基本信息
-        SearchVo searchVo = new SearchVo();
+        SearchVO searchVo = new SearchVO();
         searchVo.setSearchKey(key);
         searchVo.setSearchType(ConfigConstant.SearchType.ARTICLE.getValue());
         if (key.equals("")) {
@@ -44,10 +44,10 @@ public class SearchArticleServiceImpl implements SearchService {
         Map<String, String> imageMap = configService.getArticleSourceImage();
 
         // 获取文章信息
-        List<ResultVo> resultVoList = new LinkedList<>();
+        List<ResultVO> resultVOList = new LinkedList<>();
         List<Article> articleList = articleMapper.search(key);
         for (Article article : articleList) {
-            ResultVo resultVo = new ResultVo();
+            ResultVO resultVo = new ResultVO();
             resultVo.setTitle(article.getTitle());
             resultVo.setUrl(article.getUrl());
             resultVo.setPostDate(article.getCreated());
@@ -57,9 +57,9 @@ public class SearchArticleServiceImpl implements SearchService {
             resultVo.setTags(article.getTags().stream()
                     .map(tagMap::get)
                     .collect(Collectors.toList()));
-            resultVoList.add(resultVo);
+            resultVOList.add(resultVo);
         }
-        searchVo.setResultList(resultVoList);
+        searchVo.setResultList(resultVOList);
         return searchVo;
     }
 

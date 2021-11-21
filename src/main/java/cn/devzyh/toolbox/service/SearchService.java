@@ -1,6 +1,6 @@
 package cn.devzyh.toolbox.service;
 
-import cn.devzyh.toolbox.domain.SearchVo;
+import cn.devzyh.toolbox.domain.SearchVO;
 
 /**
  * 搜索服务
@@ -13,5 +13,5 @@ public interface SearchService {
      * @param key 关键词
      * @return
      */
-    SearchVo search(String key);
+    SearchVO search(String key);
 }
