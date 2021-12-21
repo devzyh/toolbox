@@ -12,7 +12,8 @@ public class ConfigConstant {
         SITE_INFO("SITE_INFO"), // 站点信息
         ARTICLE_TAG("ARTICLE_TAG"), // 文章标签
         ARTICLE_SOURCE("ARTICLE_SOURCE"), // 文章来源平台
-        ARTICLE_SOURCE_IMAGE("ARTICLE_SOURCE_IMAGE"); // 文章来源平台图像
+        ARTICLE_SOURCE_IMAGE("ARTICLE_SOURCE_IMAGE"), // 文章来源平台图像
+        FAVORITE_ITEM_IMAGE("FAVORITE_ITEM_IMAGE"); // 收藏分组图像
 
         private final String item;
 
@@ -29,7 +30,8 @@ public class ConfigConstant {
      * 搜索类型
      */
     public enum SearchType {
-        ARTICLE("article"); // 文章数据源
+        ARTICLE("article"), // 文章数据源
+        FAVORITE("favorite"); // 收藏数据源
 
         private final String type;
 

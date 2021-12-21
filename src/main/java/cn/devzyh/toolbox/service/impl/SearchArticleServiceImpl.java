@@ -39,9 +39,9 @@ public class SearchArticleServiceImpl implements SearchService {
         }
 
         // 翻译对照
-        Map<String, String> tagMap = configService.getArticleTag();
-        Map<String, String> sourceMap = configService.getArticleSource();
-        Map<String, String> imageMap = configService.getArticleSourceImage();
+        Map<String, String> tagMap = configService.getConfigMapByItem(ConfigConstant.Item.ARTICLE_TAG);
+        Map<String, String> sourceMap = configService.getConfigMapByItem(ConfigConstant.Item.ARTICLE_SOURCE);
+        Map<String, String> imageMap = configService.getConfigMapByItem(ConfigConstant.Item.ARTICLE_SOURCE_IMAGE);
 
         // 获取文章信息
         List<ResultVO> resultVOList = new LinkedList<>();

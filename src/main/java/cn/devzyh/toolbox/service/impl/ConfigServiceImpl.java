@@ -18,7 +18,8 @@ public class ConfigServiceImpl implements ConfigService {
     @Autowired
     private ConfigMapper configMapper;
 
-    private Map<String, String> getConfigMapByItem(Item item) {
+    @Override
+    public Map<String, String> getConfigMapByItem(Item item) {
         Map<String, String> map = new HashMap<>();
         List<Config> details = configMapper.findByItem(item.getValue());
         details.forEach(detail -> {
@@ -32,18 +33,4 @@ public class ConfigServiceImpl implements ConfigService {
         return getConfigMapByItem(Item.SITE_INFO);
     }
 
-    @Override
-    public Map<String, String> getArticleTag() {
-        return getConfigMapByItem(Item.ARTICLE_TAG);
-    }
-
-    @Override
-    public Map<String, String> getArticleSource() {
-        return getConfigMapByItem(Item.ARTICLE_SOURCE);
-    }
-
-    @Override
-    public Map<String, String> getArticleSourceImage() {
-        return getConfigMapByItem(Item.ARTICLE_SOURCE_IMAGE);
-    }
 }

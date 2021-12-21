@@ -3,6 +3,7 @@ package cn.devzyh.toolbox.factory;
 import cn.devzyh.toolbox.constant.ConfigConstant;
 import cn.devzyh.toolbox.service.SearchService;
 import cn.devzyh.toolbox.service.impl.SearchArticleServiceImpl;
+import cn.devzyh.toolbox.service.impl.SearchFavoriteServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.WebApplicationContext;
@@ -26,8 +27,10 @@ public class SearchServiceFactory {
             case ARTICLE:
                 service = ctx.getBean(SearchArticleServiceImpl.class);
                 break;
+            case FAVORITE:
+                service = ctx.getBean(SearchFavoriteServiceImpl.class);
+                break;
             default:
-                service = null;
                 break;
         }
         return service;

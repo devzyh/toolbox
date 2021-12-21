@@ -23,6 +23,7 @@
                     <label class="layui-form-label">
                         <select id="searchType">
                             <option value="article" selected="selected">文章</option>
+                            <option value="favorite">收藏</option>
                         </select>
                     </label>
                     <div class="layui-input-block" style="padding-top: 9px;padding-right: 15px;">
@@ -43,46 +44,46 @@
         <tr>
             <td colspan="3" style="text-align: center"><b>数据编辑</b></td>
         </tr>
-        <tr th:each="link: ${links.editor}">
-            <td th:text="${link.name}"></td>
-            <td th:text="${link.remark}"></td>
-            <td><a class="layui-btn layui-btn-xs" th:href="${link.href}" th:target="${link.target}">访问</a></td>
+        <tr th:each="favorite: ${favorites.editor}">
+            <td th:text="${favorite.name}"></td>
+            <td th:text="${favorite.remark}"></td>
+            <td><a class="layui-btn layui-btn-xs" th:href="${favorite.href}" th:target="${favorite.target}">访问</a></td>
         </tr>
 
         <tr>
             <td colspan="3" style="text-align: center"><b>辅助工具</b></td>
         </tr>
-        <tr th:each="link: ${links.helper}">
-            <td th:text="${link.name}"></td>
-            <td th:text="${link.remark}"></td>
-            <td><a class="layui-btn layui-btn-xs" th:href="${link.href}" th:target="${link.target}">访问</a></td>
+        <tr th:each="favorite: ${favorites.helper}">
+            <td th:text="${favorite.name}"></td>
+            <td th:text="${favorite.remark}"></td>
+            <td><a class="layui-btn layui-btn-xs" th:href="${favorite.href}" th:target="${favorite.target}">访问</a></td>
         </tr>
 
         <tr>
             <td colspan="3" style="text-align: center"><b>文档链接</b></td>
         </tr>
-        <tr th:each="link: ${links.document}">
-            <td th:text="${link.name}"></td>
-            <td th:text="${link.remark}"></td>
-            <td><a class="layui-btn layui-btn-xs" th:href="${link.href}" th:target="${link.target}">访问</a></td>
+        <tr th:each="favorite: ${favorites.document}">
+            <td th:text="${favorite.name}"></td>
+            <td th:text="${favorite.remark}"></td>
+            <td><a class="layui-btn layui-btn-xs" th:href="${favorite.href}" th:target="${favorite.target}">访问</a></td>
         </tr>
 
         <tr>
             <td colspan="3" style="text-align: center"><b>技术博客</b></td>
         </tr>
-        <tr th:each="link: ${links.blog}">
-            <td th:text="${link.name}"></td>
-            <td th:text="${link.remark}"></td>
-            <td><a class="layui-btn layui-btn-xs" th:href="${link.href}" th:target="${link.target}">访问</a></td>
+        <tr th:each="favorite: ${favorites.blog}">
+            <td th:text="${favorite.name}"></td>
+            <td th:text="${favorite.remark}"></td>
+            <td><a class="layui-btn layui-btn-xs" th:href="${favorite.href}" th:target="${favorite.target}">访问</a></td>
         </tr>
 
         <tr>
             <td colspan="3" style="text-align: center"><b>友情链接</b></td>
         </tr>
-        <tr th:each="link: ${links.friend}">
-            <td th:text="${link.name}"></td>
-            <td th:text="${link.remark}"></td>
-            <td><a class="layui-btn layui-btn-xs" th:href="${link.href}" th:target="${link.target}">访问</a></td>
+        <tr th:each="favorite: ${favorites.friend}">
+            <td th:text="${favorite.name}"></td>
+            <td th:text="${favorite.remark}"></td>
+            <td><a class="layui-btn layui-btn-xs" th:href="${favorite.href}" th:target="${favorite.target}">访问</a></td>
         </tr>
     </table>
 </div>

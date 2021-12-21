@@ -1,19 +1,19 @@
 package cn.devzyh.toolbox.service;
 
-import cn.devzyh.toolbox.domain.Link;
+import cn.devzyh.toolbox.domain.Favorite;
 
 import java.util.List;
 import java.util.Map;
 
 /**
- * 工具页面服务层
+ * 收藏夹服务层
  */
-public interface LinkService {
+public interface FavoriteService {
 
     /**
      * 获取分组及工具详情
      *
      * @return
      */
-    Map<String, List<Link>> getLinks();
+    Map<String, List<Favorite>> getFavorites();
 }

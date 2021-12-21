@@ -1,9 +1,9 @@
 package cn.devzyh.toolbox.domain;
 
 /**
- * 链接表
+ * 收藏夹
  */
-public class Link {
+public class Favorite {
 
     private Integer id; // ID
     private String item; // 分组

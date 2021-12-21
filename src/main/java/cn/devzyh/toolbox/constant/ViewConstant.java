@@ -9,7 +9,7 @@ public class ViewConstant {
      * 工具视图
      */
     public class Index {
-        public static final String LINKS = "links"; // 链接信息
+        public static final String FAVORITES = "favorites"; // 链接信息
     }
 
     /**
