@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title th:text="${'数据字典详情 - '+title}">数据字典详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" th:href="${cdn + '/layui/2.8.18/css/layui.min.css'}">
+    <link rel="stylesheet" href="/static/admin/css/admin.css">
+</head>
+<body onload="rememberPrevUrl()">
+<div class="layui-layout layui-layout-admin">
+
+    <div th:include="admin/header"></div>
+
+    <div th:include="admin/sidebar"></div>
+
+    <div class="layui-body">
+        <div class="dictionary-detail-container">
+            <form class="layui-form" id="detail">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">编码</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="code" lay-verify="required" placeholder="请输入编码" autocomplete="off"
+                               class="layui-input" th:value="${data.code}" th:disabled="${data.code!=null}">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">数据</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="data" lay-verify="required" placeholder="请输入数据" autocomplete="off"
+                               class="layui-input" th:value="${data.data}">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">类型</label>
+                    <div class="layui-input-block">
+                        <select name="type">
+                            <option value="">请选择类型</option>
+                            <option th:each="t:${types}"
+                                    th:value="${t}" th:text="${t}"
+                                    th:selected="${t==data.type}">
+                            </option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">备注</label>
+                    <div class="layui-input-block">
+                        <textarea name="remark" placeholder="配置项备注信息" autocomplete="off" class="layui-textarea"
+                                  th:text="${data.remark}"></textarea>
+                    </div>
+                </div>
+
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button type="button" class="layui-btn" id="save">保存</button>
+                        <a class="layui-btn layui-btn-primary" onclick="backPrevUrl()">返回</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<script th:src="${cdn + '/layui/2.8.18/layui.min.js'}"></script>
+<script src="/static/admin/js/admin.js"></script>
+<script src="/static/admin/js/dictionary.js"></script>
+</body>
+</html>

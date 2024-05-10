@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title th:text="${title}"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" th:href="${cdn + '/layui/2.8.18/css/layui.min.css'}">
+    <link rel="stylesheet" href="/static/main/main.css">
+</head>
+<body>
+
+<div th:include="header"></div>
+
+<div class="layui-container">
+    <div class="contar-wrap" style="line-height: 50px;">
+        <div style="padding: 50px 0px; text-align: center; font-size: 30px;font-weight: 500;color: #666666">
+            Sorry， 页面跑丢了...
+        </div>
+        <div style="text-align: center;">
+            <button class="layui-btn layui-btn-primary" onclick="window.history.back(-1)">返回上页</button>
+            <button class="layui-btn layui-btn-primary" onclick="self.location='/'">返回首页</button>
+        </div>
+    </div>
+</div>
+
+<div th:include="footer"></div>
+
+<script th:src="${cdn + '/layui/2.8.18/layui.min.js'}"></script>
+<script src="/static/main/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+/* 头部区域 */
+.layui-header .layui-logo a {
+    color: #fff;
+}
+
+/* 内容区域 */
+.layui-body {
+    padding: 15px;
+}
+
+/* 分页控件 */
+.table-page {
+    text-align: center;
+}
+
+/* 修改密码页面 */
+.update-password-container {
+    width: 320px;
+    margin: 21px auto 0;
+}
+
+/* 基本信息设置 */
+.setting-container .layui-form-item .layui-form-label {
+    width: 120px;
+}
+
+.setting-container .layui-form-item .layui-input-block {
+    margin-left: 150px;
+}
+
+/* 收藏详情页面 */
+.mark-detail-container .layui-form-checkbox {
+    margin-left: 15px;
+    margin-top: 0px !important;
+}
+
+.mark-detail-container .tags {
+    line-height: 36px;;
+}

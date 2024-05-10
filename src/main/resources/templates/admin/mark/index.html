@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title th:text="${'收藏管理 - '+title}">收藏管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" th:href="${cdn + '/layui/2.8.18/css/layui.min.css'}">
+    <link rel="stylesheet" href="/static/admin/css/admin.css">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+
+    <div th:include="admin/header"></div>
+
+    <div th:include="admin/sidebar"></div>
+
+    <div class="layui-body">
+        <div class="mark-container">
+            <!-- 搜索框 -->
+            <form class="layui-form layui-row layui-col-space16" id="query">
+                <div class="layui-col-md2">
+                    <div class="layui-form-item">
+                        <select name="source">
+                            <option value="">按来源平台搜索</option>
+                            <option th:each="t:${data.sources}"
+                                    th:value="${t.code}" th:text="${t.data}">
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="layui-col-md2">
+                    <div class="layui-form-item">
+                        <input type="text" name="key" placeholder="按关键字搜索" class="layui-input">
+                    </div>
+                </div>
+
+                <div class="layui-btn-container">
+                    <button type="submit" class="layui-btn" lay-submit>搜索</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                    <a class="layui-btn layui-btn-warm" href="/admin/mark/add">添加</a>
+                </div>
+            </form>
+
+            <!-- 数据表格 -->
+            <table class="layui-table">
+                <thead>
+                <tr>
+                    <th>标题</th>
+                    <th width="150">来源</th>
+                    <th width="150">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="row:${data.page.records}">
+                    <td th:text="${row.title}"></td>
+                    <td th:text="${row.source}"></td>
+                    <td>
+                        <a type="button" class="layui-btn layui-btn-xs" th:href="${ '/admin/mark/' + row.id }">编辑</a>
+                        <button type="button" class="layui-btn layui-btn-danger layui-btn-xs"
+                                th:attr="row-id=${row.id},row-title=${row.title}" name="remove">删除
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- 分页 -->
+            <div id="page" class="table-page">
+                <input type="hidden" id="curr" th:value="${data.page.current}">
+                <input type="hidden" id="limit" th:value="${data.page.size}">
+                <input type="hidden" id="count" th:value="${data.page.total}">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script th:src="${cdn + '/layui/2.8.18/layui.min.js'}"></script>
+<script src="/static/admin/js/admin.js"></script>
+<script src="/static/admin/js/mark.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.login-container {
+    width: 320px;
+    margin: 21px auto 0;
+}
+
+.login-container h1 {
+    text-align: center;
+    margin: 20px;
+    color: #5f5f5f;
+}
+
+.login-container .layui-icon-eye {
+    cursor: pointer;
+}

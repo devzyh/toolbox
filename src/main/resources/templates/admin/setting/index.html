@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title th:text="${'基本设置 - '+title}">修改密码</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" th:href="${cdn + '/layui/2.8.18/css/layui.min.css'}">
+    <link rel="stylesheet" href="/static/admin/css/admin.css">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+
+    <div th:include="admin/header"></div>
+
+    <div th:include="admin/sidebar"></div>
+
+    <div class="layui-body">
+        <div class="setting-container">
+            <form class="layui-form" id="setting">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">站点标题</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="title" lay-verify="required" placeholder="全局站点标题" autocomplete="off"
+                               class="layui-input" th:value="${title}">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">博客链接</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="url" lay-verify="required" placeholder="首页博客按钮链接" autocomplete="off"
+                               class="layui-input" th:value="${url}">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">代码仓库</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="git" lay-verify="required" placeholder="首页代码按钮链接" autocomplete="off"
+                               class="layui-input" th:value="${git}">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">路线图链接</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="roadmap" lay-verify="required" placeholder="首页路线图按钮链接"
+                               autocomplete="off" class="layui-input" th:value="${roadmap}">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">CDN地址</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="cdn" lay-verify="required" placeholder="全局静态资源公共CDN" autocomplete="off"
+                               class="layui-input" th:value="${cdn}">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">后台默认页面</label>
+                    <div class="layui-input-block">
+                        <input type="text" name="dashboard" lay-verify="required" placeholder="后台管理页面登陆后跳转路径"
+                               autocomplete="off" class="layui-input" th:value="${dashboard}">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-block">
+                        <button class="layui-btn" type="button" id="save-setting">保存设置</button>
+                        <a class="layui-btn layui-bg-orange" type="button" href="/admin/export">导出数据</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<script th:src="${cdn + '/layui/2.8.18/layui.min.js'}"></script>
+<script src="/static/admin/js/admin.js"></script>
+<script src="/static/admin/js/setting.js"></script>
+</body>
+</html>

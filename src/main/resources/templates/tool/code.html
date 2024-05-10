@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title th:text="${'编码/加密/解密-'+title}">加密解密</title>
+    <link rel="icon" href="/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" th:href="${cdn + '/layui/2.8.18/css/layui.min.css'}">
+    <link rel="stylesheet" href="/static/tool/code/code.css">
+</head>
+<body>
+<div style="margin: 10px">
+    <div class="layui-tab">
+        <ul class="layui-tab-title">
+            <li th:classappend="${key==null||key=='url'?'layui-this':''}">URLEncode</li>
+            <li th:classappend="${key=='base64'?'layui-this':''}">Base64</li>
+            <li th:classappend="${key=='md5'?'layui-this':''}">MD5加密</li>
+            <li th:classappend="${key=='unicode'?'layui-this':''}">Unicode</li>
+            <li th:classappend="${key=='crypt'?'layui-this':''}">加密/解密</li>
+            <li th:classappend="${key=='hash'?'layui-this':''}">散列/哈希</li>
+            <li th:classappend="${key=='ttx'?'layui-this':''}">TTX加密/解密</li>
+        </ul>
+        <div class=" layui-tab-content">
+            <div class="layui-tab-item" th:classappend="${key==null||key=='url'?'layui-show':''}">
+                <div class="layui-form">
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">输入</label>
+                        <div class="layui-input-block">
+                            <textarea id="urlInput" placeholder="请输入内容" class="layui-textarea"
+                                      rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button id="urlEncode" class="layui-btn layui-btn-normal">编码</button>
+                            <button id="urlDecode" class="layui-btn layui-btn-warm">解码</button>
+                            <button id="urlExchange" class="layui-btn">交换</button>
+                            <button id="urlClear" class="layui-btn layui-btn-danger">清空</button>
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">输出</label>
+                        <div class="layui-input-block">
+                            <textarea id="urlOutput" placeholder="这里输出处理结果" class="layui-textarea"
+                                      readonly="readonly"
+                                      rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-tab-item" th:classappend="${key=='base64'?'layui-show':''}">
+                <div class="layui-form">
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">输入</label>
+                        <div class="layui-input-block">
+                            <textarea id="baseInput" placeholder="请输入内容" class="layui-textarea"
+                                      rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button id="baseEncode" class="layui-btn layui-btn-normal">编码</button>
+                            <button id="baseDecode" class="layui-btn layui-btn-warm">解码</button>
+                            <button id="baseExchange" class="layui-btn">交换</button>
+                            <button id="baseClear" class="layui-btn layui-btn-danger">清空</button>
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">输出</label>
+                        <div class="layui-input-block">
+                            <textarea id="baseOutput" placeholder="这里输出处理结果" class="layui-textarea"
+                                      readonly="readonly"
+                                      rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-tab-item" th:classappend="${key=='md5'?'layui-show':''}">
+                <div class="layui-form">
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">输入</label>
+                        <div class="layui-input-block">
+                            <textarea id="md5Input" placeholder="请输入内容" class="layui-textarea"
+                                      rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button id="md5" class="layui-btn layui-btn-normal">生成32位小写</button>
+                            <button id="md5Upper" class="layui-btn layui-btn-normal">生成32位大写</button>
+                            <button id="md516" class="layui-btn layui-btn-normal">生成16位小写</button>
+                            <button id="md516Upper" class="layui-btn layui-btn-normal">生成16位大写</button>
+                            <button id="md5Clear" class="layui-btn layui-btn-danger">清空</button>
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">输出</label>
+                        <div class="layui-input-block">
+                            <textarea id="md5Output" placeholder="这里输出处理结果" class="layui-textarea"
+                                      readonly="readonly"
+                                      rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-tab-item" th:classappend="${key=='unicode'?'layui-show':''}">
+                <div class="layui-form">
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">输入</label>
+                        <div class="layui-input-block">
+                            <textarea id="uniInput" placeholder="请输入内容" class="layui-textarea"
+                                      rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button id="uniCONVERT_FMT2" class="layui-btn layui-btn-normal">中文转Unicode</button>
+                            <button id="uniRECONVERT" class="layui-btn layui-btn-normal">Unicode转中文</button>
+                            <button id="uniCONVERT_FMT3" class="layui-btn layui-btn-normal">Unicode转ASCII</button>
+                            <button id="uniRECONVERT1" class="layui-btn layui-btn-normal">ASCII转Unicode</button>
+                            <button id="uniCONVERT_FMT1" class="layui-btn layui-btn-normal">中文转&amp;#数据</button>
+                            <button id="uniExchange" class="layui-btn">交换</button>
+                            <button id="uniClear" class="layui-btn layui-btn-danger">清空</button>
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">输出</label>
+                        <div class="layui-input-block">
+                            <textarea id="uniOutput" placeholder="这里输出处理结果" class="layui-textarea"
+                                      readonly="readonly"
+                                      rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-tab-item" th:classappend="${key=='crypt'?'layui-show':''}">
+                <div class="layui-form">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">算法</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="cryptAlgorithm" value="AES" title="AES" checked="checked">
+                            <input type="radio" name="cryptAlgorithm" value="DES" title="DES">
+                            <input type="radio" name="cryptAlgorithm" value="RC4" title="RC4">
+                            <input type="radio" name="cryptAlgorithm" value="Rabbit" title="Rabbit">
+                            <input type="radio" name="cryptAlgorithm" value="TripleDes" title="TripleDes">
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">输入</label>
+                        <div class="layui-input-block">
+                            <textarea id="cryptInput" placeholder="请输入内容" class="layui-textarea"
+                                      rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">密码</label>
+                        <div class="layui-input-block">
+                            <input type="text" id="cryptPassword" autocomplete="off" placeholder="请输入密码（非必填）"
+                                   class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button id="encrypt" class="layui-btn layui-btn-normal">加密</button>
+                            <button id="decrypt" class="layui-btn layui-btn-warm">解密</button>
+                            <button id="cryptClear" class="layui-btn layui-btn-danger">清空</button>
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">输出</label>
+                        <div class="layui-input-block">
+                            <textarea id="cryptOutput" placeholder="这里输出处理结果" class="layui-textarea"
+                                      readonly="readonly"
+                                      rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-tab-item" th:classappend="${key=='hash'?'layui-show':''}">
+                <div class="layui-form">
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">输入</label>
+                        <div class="layui-input-block">
+                            <textarea id="hashInput" placeholder="请输入内容" class="layui-textarea"
+                                      rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">算法</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="hashAlgorithm" value="SHA1" title="SHA1" checked="checked">
+                            <input type="radio" name="hashAlgorithm" value="SHA224" title="SHA224">
+                            <input type="radio" name="hashAlgorithm" value="SHA256" title="SHA256">
+                            <input type="radio" name="hashAlgorithm" value="SHA384" title="SHA384">
+                            <input type="radio" name="hashAlgorithm" value="SHA512" title="SHA512">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button id="hashMakeLower" class="layui-btn layui-btn-normal">生成小写</button>
+                            <button id="hashMakeUpper" class="layui-btn layui-btn-normal">生成大写</button>
+                            <button id="hashClear" class="layui-btn layui-btn-danger">清空</button>
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">输出</label>
+                        <div class="layui-input-block">
+                            <textarea id="hashOutput" placeholder="这里输出处理结果" class="layui-textarea"
+                                      readonly="readonly"
+                                      rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-tab-item" th:classappend="${key=='ttx'?'layui-show':''}">
+                <div class="layui-form">
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">输入</label>
+                        <div class="layui-input-block">
+                            <textarea id="ttxInput" placeholder="请输入内容" class="layui-textarea"
+                                      rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">密码</label>
+                        <div class="layui-input-block">
+                            <input type="text" id="ttxPassword" autocomplete="off" placeholder="请输入密钥"
+                                   class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button id="ttxEncrypt" class="layui-btn layui-btn-normal">加密</button>
+                            <button id="ttxDecrypt" class="layui-btn layui-btn-warm">解密</button>
+                            <a id="ttxCode" class="layui-btn layui-btn-info" target="_blank"
+                               href="https://gitee.com/devzyh/toolbox/blob/master/src/main/java/cn/devzyh/toolbox/util/TtxCryptUtil.java">
+                                代码</a>
+                            <button id="ttxClear" class="layui-btn layui-btn-danger">清空</button>
+                        </div>
+                    </div>
+                    <div class="layui-form-item layui-form-text">
+                        <label class="layui-form-label">输出</label>
+                        <div class="layui-input-block">
+                            <textarea id="ttxOutput" placeholder="这里输出处理结果" class="layui-textarea"
+                                      readonly="readonly"
+                                      rows="10"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script th:src="${cdn + '/layui/2.8.18/layui.min.js'}"></script>
+<script th:src="${cdn + '/crypto-js/4.1.1/crypto-js.min.js'}"></script>
+<script src="/static/tool/code/code.js"></script>
+</body>
+</html>

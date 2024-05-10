@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title th:text="${'修改密码 - '+title}">修改密码</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" th:href="${cdn + '/layui/2.8.18/css/layui.min.css'}">
+    <link rel="stylesheet" href="/static/admin/css/admin.css">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+
+    <div th:include="admin/header"></div>
+
+    <div th:include="admin/sidebar"></div>
+
+    <div class="layui-body">
+        <div class="update-password-container">
+            <form class="layui-form" id="password">
+                <div class="layui-form-item">
+                    <div class="layui-input-wrap">
+                        <div class="layui-input-prefix">
+                            <i class="layui-icon layui-icon-password"></i>
+                        </div>
+                        <input type="password" name="originalPassword" value="" lay-verify="required"
+                               placeholder="请输入登录密码"
+                               autocomplete="off" class="layui-input" lay-affix="eye">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-wrap">
+                        <div class="layui-input-prefix">
+                            <i class="layui-icon layui-icon-password"></i>
+                        </div>
+                        <input type="password" name="password" value="" lay-verify="required" placeholder="请输入修改后密码"
+                               autocomplete="off" class="layui-input" id="reg-password" lay-affix="eye">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-input-wrap">
+                        <div class="layui-input-prefix">
+                            <i class="layui-icon layui-icon-password"></i>
+                        </div>
+                        <input type="password" name="confirmPassword" value="" lay-verify="required|confirmPassword"
+                               placeholder="请确认修改后密码" autocomplete="off" class="layui-input" lay-affix="eye">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <button type="button" class="layui-btn layui-btn-fluid" id="change-password" lay-submit>立即修改</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<script th:src="${cdn + '/layui/2.8.18/layui.min.js'}"></script>
+<script src="/static/admin/js/admin.js"></script>
+<script src="/static/admin/js/setting.js"></script>
+</body>
+</html>

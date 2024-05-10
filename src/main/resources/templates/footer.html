@@ -1,0 +1,30 @@
+<div class="footer">
+    <div class="grid" style="padding-bottom: 10px;">
+        <div class="grid-col" style="font-size:15px;">
+            友情链接：
+            <a th:each="f: ${friends}" th:href="${f.url}" th:target="${f.open}"
+               th:text="${f.title}">友链</a>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="grid-col">
+            <div class="footer-copyright">
+                <p>
+                    <a href="/" target="_blank" th:text="${title}">title</a>
+                    2021 &copy;
+                    <a th:href="${url}" target="_blank">DEVZYH.CN</a>
+                </p>
+                <p>
+                    <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">鄂ICP备2021005865号</a>
+                </p>
+                <p>
+                    <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank"
+                       rel="nofollow">
+                        <img src="/static/main/upyun.png" height="40px">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

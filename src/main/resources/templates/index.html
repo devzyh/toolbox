@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title th:text="${title}">title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" th:href="${cdn + '/layui/2.8.18/css/layui.min.css'}">
+    <link rel="stylesheet" href="/static/main/main.css">
+</head>
+<body>
+
+<div class="page-wrapper">
+
+    <div th:include="header"></div>
+
+    <div class="page-main">
+
+        <!-- 数据编辑 -->
+        <div class="grid">
+            <div class="grid-col">
+                <h1 class="heading">
+                    <span class="heading-title">数据编辑</span>
+                </h1>
+            </div>
+        </div>
+        <div class="grid links">
+            <div class="grid-col grid-col-2" th:each="link: ${data.editor}">
+                <a th:href="${link.url}" th:target="${link.open}">
+                    <div class="link-item">
+                        <i class="fa czs-product-l"></i>
+                        <div class="link-info">
+                            <h2 th:text="${link.title}">链接名称</h2>
+                            <p class="link-meta">
+                                <span class="date fl" th:text="${link.remark}"></span>
+                                <span class="view fr" th:text="${opens.get(link.open)}">新的页面</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="text-center" style="margin-bottom:20px;">
+            <a class="btn" href="/link/editor">更多链接</a>
+        </div>
+
+        <!-- 辅助工具 -->
+        <div class="grid">
+            <div class="grid-col">
+                <h1 class="heading">
+                    <span class="heading-title">效率工具</span>
+                </h1>
+            </div>
+        </div>
+        <div class="grid links">
+            <div class="grid-col grid-col-2" th:each="link: ${data.helper}">
+                <a th:href="${link.url}" th:target="${link.open}">
+                    <div class="link-item">
+                        <i class="fa czs-link-l"></i>
+                        <div class="link-info">
+                            <h2 th:text="${link.title}">链接名称</h2>
+                            <p class="link-meta">
+                                <span class="date fl" th:text="${link.remark}"></span>
+                                <span class="view fr" th:text="${opens.get(link.open)}">新的页面</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="text-center" style="margin-bottom:20px;">
+            <a class="btn" href="/link/helper">更多链接</a>
+        </div>
+
+        <!-- 文档链接 -->
+        <div class="grid">
+            <div class="grid-col">
+                <h1 class="heading">
+                    <span class="heading-title">文档链接</span>
+                </h1>
+            </div>
+        </div>
+        <div class="grid links">
+            <div class="grid-col grid-col-2" th:each="link: ${data.document}">
+                <a th:href="${link.url}" th:target="${link.open}">
+                    <div class="link-item">
+                        <i class="fa czs-doc-file-l"></i>
+                        <div class="link-info">
+                            <h2 th:text="${link.title}">链接名称</h2>
+                            <p class="link-meta">
+                                <span class="date fl" th:text="${link.remark}"></span>
+                                <span class="view fr" th:text="${opens.get(link.open)}">新的页面</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="text-center" style="margin-bottom:20px;">
+            <a class="btn" href="/link/document">更多链接</a>
+        </div>
+
+        <!-- 技术博客 -->
+        <div class="grid">
+            <div class="grid-col">
+                <h1 class="heading">
+                    <span class="heading-title">技术博客</span>
+                </h1>
+            </div>
+        </div>
+        <div class="grid links">
+            <div class="grid-col grid-col-2" th:each="link: ${data.blog}">
+                <a th:href="${link.url}" th:target="${link.open}">
+                    <div class="link-item">
+                        <i class="fa czs-network-l"></i>
+                        <div class="link-info">
+                            <h2 th:text="${link.title}">链接名称</h2>
+                            <p class="link-meta">
+                                <span class="date fl" th:text="${link.remark}"></span>
+                                <span class="view fr" th:text="${opens.get(link.open)}">新的页面</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="text-center" style="margin-bottom:20px;">
+            <a class="btn" href="/link/blog">更多链接</a>
+        </div>
+
+    </div>
+
+    <div th:include="footer"></div>
+
+</div>
+
+<script th:src="${cdn + '/layui/2.8.18/layui.min.js'}"></script>
+<script src="/static/main/main.js"></script>
+</body>
+</html>
