@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+}
+
+.jsoneditor-menu>button {
+    cursor: pointer;
+}
+
+.jsoneditor-menu .jsoneditor-restore {
+    background-position: -72px 0px;
+}
+
+.jsoneditor-menu .jsoneditor-escape {
+    background-position: -144px 0px;
+}
+
+.jsoneditor-menu .jsoneditor-clear {
+    background-position: -24px 0px;
+}
