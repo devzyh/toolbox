@@ -16,7 +16,7 @@ public class ToolController {
     /**
      * JSON编辑器
      */
-    @GetMapping("/json")
+    @GetMapping(value = {"/json", "/json/"})
     public String tool() {
         return AppConstant.ViewPath.JSON;
     }
@@ -24,7 +24,7 @@ public class ToolController {
     /**
      * XML编辑器
      */
-    @GetMapping("/xml")
+    @GetMapping(value = {"/xml", "/xml/"})
     public String xml() {
         return AppConstant.ViewPath.XML;
     }
@@ -32,7 +32,7 @@ public class ToolController {
     /**
      * 文本差异对比
      */
-    @GetMapping("/diff")
+    @GetMapping(value = {"/diff", "/diff/"})
     public String diff() {
         return AppConstant.ViewPath.DIFF;
     }
@@ -40,7 +40,7 @@ public class ToolController {
     /**
      * XSLT编辑器
      */
-    @GetMapping("/xslt")
+    @GetMapping(value = {"/xslt", "/xslt/"})
     public String xslt() {
         return AppConstant.ViewPath.XSLT;
     }
@@ -48,22 +48,22 @@ public class ToolController {
     /**
      * 文本处理
      */
-    @GetMapping(value = {"/code", "/code/{key}"})
-    public String code(@PathVariable(required = false) String key, Model model) {
-        if (StrUtil.isNotBlank(key)) {
-            key = key.toLowerCase();
-            if (!AppConstant.ViewKey.SUPPORT_TYPES.contains(key)) {
-                key = null;
+    @GetMapping(value = {"/code", "/code/", "/code/{type}", "/code/{key}/"})
+    public String code(@PathVariable(required = false) String type, Model model) {
+        if (StrUtil.isNotBlank(type)) {
+            type = type.toLowerCase();
+            if (!AppConstant.ViewKey.SUPPORT_TYPES.contains(type)) {
+                type = null;
             }
         }
-        model.addAttribute("key", key);
+        model.addAttribute(AppConstant.ViewKey.TYPE, type);
         return AppConstant.ViewPath.CODE;
     }
 
     /**
      * Unix时间戳
      */
-    @GetMapping("/unix")
+    @GetMapping(value = {"/unix", "/unix/"})
     public String unix() {
         return AppConstant.ViewPath.UNIX;
     }

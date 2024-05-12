@@ -1,98 +1,50 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title th:text="${'XSLT转换测试-'+title}">XSLT转换测试</title>
+    <title th:text="${'XSLT转换测试-' + title}">XSLT转换测试</title>
     <link rel="icon" href="/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" th:href="${cdn + '/layui/2.8.18/css/layui.min.css'}">
-    <link rel="stylesheet" href="/static/tool/xslt/xslt.css">
+    <link rel="stylesheet" th:href="${cdn + '/layui/2.9.9/css/layui.min.css'}">
+    <link rel="stylesheet" href="/xslt/css/ext.css">
 </head>
+
 <body>
-<div style="margin: 10px">
 
-    <div class="layui-row main">
-        <fieldset class="layui-elem-field layui-field-title">
-            <legend>XSLT代码</legend>
-        </fieldset>
-        <div id="xsltEditor"></div>
-    </div>
-
-    <div class="layui-row ctrl">
-        <button type="button" class="layui-btn layui-btn-normal layui-btn-sm" id="convert">转换XML数据</button>
-        <button type="button" class="layui-btn layui-btn-warm layui-btn-sm" id="formatSource">格式化XML数据</button>
-        <button type="button" class="layui-btn layui-btn-danger layui-btn-sm" id="clear">清空转换结果</button>
-    </div>
-
-    <div class="layui-row">
-        <div class="layui-col-md6 left">
-            <fieldset class="layui-elem-field layui-field-title">
-                <legend>XML数据</legend>
-            </fieldset>
-            <div id="sourceEditor"></div>
-        </div>
-        <div class="layui-col-md6 right">
-            <fieldset class="layui-elem-field layui-field-title">
-                <legend>转换结果</legend>
-            </fieldset>
-            <div id="resultEditor"></div>
-        </div>
-    </div>
-
+<div class="layui-row main">
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>XSLT代码</legend>
+    </fieldset>
+    <div id="xsltEditor"></div>
 </div>
-<script th:src="${cdn + '/layui/2.8.18/layui.min.js'}"></script>
+
+<div class="layui-row ctrl">
+    <button type="button" class="layui-btn layui-btn-normal layui-btn-sm" id="convert">渲染XML数据</button>
+    <button type="button" class="layui-btn layui-btn-warm layui-btn-sm" id="formatSource">格式化XML数据</button>
+    <button type="button" class="layui-btn layui-btn-danger layui-btn-sm" id="clear">清空输出结果</button>
+</div>
+
+<div class="layui-row">
+    <div class="layui-col-md6 left">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend>XML数据</legend>
+        </fieldset>
+        <div id="sourceEditor"></div>
+    </div>
+    <div class="layui-col-md6 right">
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend>转换结果</legend>
+        </fieldset>
+        <div id="resultEditor"></div>
+    </div>
+</div>
+
+<script th:src="${cdn + '/layui/2.9.9/layui.min.js'}"></script>
 <script th:src="${cdn + '/ace/1.5.3/ace.min.js'}"></script>
-<script src="/static/tool/xslt/xslt.js"></script>
-<script th:inline="javascript">
-    ace.config.set('basePath', [[${cdn + '/ace/1.4.12'}]])
-
-    const xsltKey = "xslt@" + [[${key}]]
-    const xmlKey = "xslt@xml@" + [[${key}]]
-
-    const xsltEditor = ace.edit("xsltEditor")
-    xsltEditor.setTheme("ace/theme/sqlserver")
-    xsltEditor.setFontSize("14px")
-    xsltEditor.setOption("wrap", "free")
-    xsltEditor.getSession().setMode("ace/mode/xml")
-    xsltEditor.getSession().setValue(localStorage.getItem(xsltKey) || "")
-    xsltEditor.getSession().on("change", function () {
-        localStorage.setItem(xsltKey, xsltEditor.getSession().getValue())
-    })
-
-    const sourceEditor = ace.edit("sourceEditor")
-    sourceEditor.setTheme("ace/theme/sqlserver")
-    sourceEditor.setFontSize("14px")
-    sourceEditor.setOption("wrap", "free")
-    sourceEditor.getSession().setMode("ace/mode/xml")
-    sourceEditor.getSession().setValue(localStorage.getItem(xmlKey) || "")
-    sourceEditor.getSession().on("change", function () {
-        localStorage.setItem(xmlKey, sourceEditor.getSession().getValue())
-    })
-
-    const resultEditor = ace.edit("resultEditor")
-    resultEditor.setFontSize("14px")
-    resultEditor.setOption("wrap", "free")
-    resultEditor.setReadOnly(true)
-
-    layui.use(function () {
-        var $ = layui.$
-
-        $("#convert").click(function () {
-            try {
-                resultEditor.setValue(convertOriginalData(xsltEditor.getValue(), sourceEditor.getValue()))
-            } catch (err) {
-                resultEditor.setValue("错误信息：" + err.message)
-            }
-        })
-
-        $("#formatSource").click(function () {
-            sourceEditor.setValue(formatXml(sourceEditor.getValue()))
-        })
-
-        $("#clear").click(function () {
-            resultEditor.setValue("")
-        })
-    })
-</script>
+<script th:src="${cdn + '/jquery/2.2.4/jquery.min.js'}"></script>
+<script src="/xml/js/jquery.format.js"></script>
+<script src="/xslt/js/ext.js"></script>
 </body>
+
 </html>

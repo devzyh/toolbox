@@ -1,6 +1,6 @@
 {
   "title": "软件工具箱",
-  "cdn": "//cdn.staticfile.net/",
+  "cdn": "//cdn.staticfile.net",
   "limit": 10,
   "search": "https://cn.bing.com/search?q=-csdn ",
   "navs": [
