@@ -33,7 +33,7 @@
         {
           "icon": "fa czs-product-l",
           "text": "JSON编辑器",
-          "href": "/json/",
+          "href": "/json",
           "target": "_self",
           "subText": "简单的JSON文本编辑工具"
         },
