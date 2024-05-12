@@ -16,7 +16,7 @@ public class LinkGroup implements Serializable {
     private String code;
 
     // 分组名称
-    private String name;
+    private String text;
 
     // 链接集合
     private List<Link> links;

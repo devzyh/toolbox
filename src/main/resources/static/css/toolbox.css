@@ -1537,7 +1537,7 @@ sup {
 }
 
 .header .store-btn {
-    margin: 0 auto;
+    margin: 0 3px;
     margin-top: 20px;
     padding: 10px 1pc;
     width: 145px;

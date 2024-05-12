@@ -11,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Slf4j
 @ControllerAdvice
-public class AppViewAdvice {
+public class ViewAdvice {
 
     /**
      * 绑定到全局Model中
@@ -25,7 +25,9 @@ public class AppViewAdvice {
      * 统一异常处理
      */
     @ExceptionHandler(Exception.class)
-    public ModelAndView exceptionHandler(Exception e) {
+    public ModelAndView exceptionHandler(Exception e, Model model) {
+        model.addAttribute(AppConstant.ViewKey.ERROR_MSG, e.getMessage());
+        model.addAllAttributes(AppConstant.VIEW_DATA);
         log.error("页面请求异常：{}", e.getMessage(), e);
         return new ModelAndView(AppConstant.ViewPath.ERROR);
     }

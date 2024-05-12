@@ -2,7 +2,11 @@ body {
     margin: 0px;
 }
 
-.jsoneditor-menu>button {
+#jsoneditor {
+    height: 100vh;
+}
+
+.jsoneditor-menu > button {
     cursor: pointer;
 }
 
@@ -16,4 +20,10 @@ body {
 
 .jsoneditor-menu .jsoneditor-clear {
     background-position: -24px 0px;
+}
+
+@media (max-width: 768px) {
+    .jsoneditor-poweredBy {
+        display: none;
+    }
 }

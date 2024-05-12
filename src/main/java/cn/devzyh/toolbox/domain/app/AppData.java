@@ -14,6 +14,9 @@ public class AppData implements Serializable {
     // CDN地址
     private String cdn;
 
+    // 显示限制
+    private Integer limit;
+
     // 搜索地址
     private String search;
 

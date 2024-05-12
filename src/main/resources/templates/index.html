@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title th:text="${title}">软件工具箱</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" th:href="${cdn + '/layui/2.9.9/css/layui.min.css'}">
     <link rel="stylesheet" href="/css/toolbox.css">
 </head>
@@ -15,35 +15,35 @@
     <div th:include="header"></div>
 
     <div class="page-main">
-
-<!--        &lt;!&ndash; 数据编辑 &ndash;&gt;-->
-<!--        <div class="grid">-->
-<!--            <div class="grid-col">-->
-<!--                <h1 class="heading">-->
-<!--                    <span class="heading-title">数据编辑</span>-->
-<!--                </h1>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="grid links">-->
-<!--            <div class="grid-col grid-col-2" th:each="link: ${data.editor}">-->
-<!--                <a th:href="${link.url}" th:target="${link.open}">-->
-<!--                    <div class="link-item">-->
-<!--                        <i class="fa czs-product-l"></i>-->
-<!--                        <div class="link-info">-->
-<!--                            <h2 th:text="${link.title}">链接名称</h2>-->
-<!--                            <p class="link-meta">-->
-<!--                                <span class="date fl" th:text="${link.remark}"></span>-->
-<!--                                <span class="view fr" th:text="${opens.get(link.open)}">新的页面</span>-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="text-center" style="margin-bottom:20px;">-->
-<!--            <a class="btn" href="/link/editor">更多链接</a>-->
-<!--        </div>-->
-
+        <div th:each="link : ${links}">
+            <div class="grid">
+                <div class="grid-col">
+                    <h1 class="heading">
+                        <span class="heading-title" th:text="${link.text}"></span>
+                    </h1>
+                </div>
+            </div>
+            <div class="grid links">
+                <div class="grid-col grid-col-2" th:each="l, stat : ${link.links}">
+                    <a th:if="${stat.index < limit}" th:href="${l.href}" th:target="${l.target}">
+                        <div class="link-item">
+                            <i th:class="${l.icon}"></i>
+                            <div class="link-info">
+                                <h2 th:text="${l.text}"></h2>
+                                <p class="link-meta">
+                                    <span class="date fl" th:text="${l.subText}"></span>
+                                    <span class="view fr" th:if="${l.target == '_self'}">当前页面</span>
+                                    <span class="view fr" th:if="${l.target == '_blank'}">新的页面</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center" style="margin-bottom:20px;">
+                <a class="btn" th:href="${'/more/'+ link.code}">更多链接</a>
+            </div>
+        </div>
     </div>
 
     <div th:include="footer"></div>

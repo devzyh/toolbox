@@ -33,23 +33,32 @@ public class AppConstant {
     public static final JsonMapper JSON = new JsonMapper();
 
     /**
+     * 模板数据
+     */
+    public static class ViewKey {
+        // 错误信息
+        public static String ERROR_MSG = "message";
+        // 链接页数据
+        public static String MORE = "more";
+        // 文本处理类型
+        public static String TYPE = "type";
+        // 文本处理页面支持的类型
+        public static List<String> SUPPORT_TYPES = Arrays.asList("url", "base64", "md5", "unicode", "ttx");
+    }
+
+    /**
      * 模板路径
      */
     public static class ViewPath {
         public static String INDEX = "index";
-        public static String LIST = "list";
+        public static String MORE = "more";
         public static String ERROR = "error";
-        public static String JSON = "json";
-        public static String XML = "xml";
-        public static String DIFF = "diff";
-        public static String XSLT = "xslt";
-        public static String UNIX = "unix";
-        public static String CODE = "code";
+        public static String JSON = "tool/json";
+        public static String XML = "tool/xml";
+        public static String DIFF = "tool/diff";
+        public static String XSLT = "tool/xslt";
+        public static String CODE = "tool/code";
+        public static String UNIX = "tool/unix";
     }
-
-    /**
-     * 加密页面支持的类型
-     */
-    public static final List<String> CODE_TYPES = Arrays.asList("url", "base64", "md5", "unicode", "ttx");
 
 }

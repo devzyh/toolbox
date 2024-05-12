@@ -1,6 +1,7 @@
 {
   "title": "软件工具箱",
   "cdn": "//cdn.staticfile.net/",
+  "limit": 10,
   "search": "https://cn.bing.com/search?q=-csdn ",
   "navs": [
     {
@@ -27,7 +28,7 @@
   "links": [
     {
       "code": "editor",
-      "name": "数据编辑",
+      "text": "数据编辑",
       "links": [
         {
           "icon": "fa czs-product-l",
@@ -117,7 +118,7 @@
     },
     {
       "code": "helper",
-      "name": "效率工具",
+      "text": "效率工具",
       "links": [
         {
           "icon": "fa czs-link-l",
@@ -193,7 +194,7 @@
     },
     {
       "code": "document",
-      "name": "文档链接",
+      "text": "文档链接",
       "links": [
         {
           "icon": "fa czs-file-l",
@@ -269,7 +270,7 @@
     },
     {
       "code": "blog",
-      "name": "技术博客",
+      "text": "技术博客",
       "links": [
         {
           "icon": "fa czs-file-l",

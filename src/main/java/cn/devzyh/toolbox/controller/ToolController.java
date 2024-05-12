@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 /**
- * 视图控制器
+ * 工具控制器
  */
 @Controller
-public class ViewController {
+public class ToolController {
 
     /**
      * JSON编辑器
@@ -52,7 +52,7 @@ public class ViewController {
     public String code(@PathVariable(required = false) String key, Model model) {
         if (StrUtil.isNotBlank(key)) {
             key = key.toLowerCase();
-            if (!AppConstant.CODE_TYPES.contains(key)) {
+            if (!AppConstant.ViewKey.SUPPORT_TYPES.contains(key)) {
                 key = null;
             }
         }
