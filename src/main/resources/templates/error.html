@@ -12,11 +12,11 @@
 
 <div th:include="header"></div>
 
-<div class="layui-container">
-    <div class="contar-wrap" style="line-height: 50px;">
-        <div style="padding: 50px 0px; text-align: center; font-size: 30px;font-weight: 500;color: #666666" th:text="${message}">
+<div class="layui-container" id="error">
+    <div class="contar-wrap">
+        <div class="fill" th:text="${message}">
         </div>
-        <div style="text-align: center;">
+        <div class="btns">
             <button class="layui-btn layui-btn-primary" onclick="window.history.back(-1)">返回上页</button>
             <button class="layui-btn layui-btn-primary" onclick="self.location='/'">返回首页</button>
         </div>

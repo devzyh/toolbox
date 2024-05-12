@@ -19,15 +19,15 @@ layui.use(function () {
     form.on('select(xml-indent)', function (data) {
         indent = data.value
         $("#format").click()
-    });
+    })
 
     $("#format").click(function () {
-        editor.setValue($.format(editor.getValue(), { method: 'xml', step: indent }))
-    });
+        editor.setValue($.format(editor.getValue(), {method: 'xml', step: indent}))
+    })
 
     $("#compress").click(function () {
-        editor.setValue($.format(editor.getValue(), { method: 'xmlmin' }))
-    });
+        editor.setValue($.format(editor.getValue(), {method: 'xmlmin'}))
+    })
 
     $("#clear").click(function () {
         editor.setValue("")

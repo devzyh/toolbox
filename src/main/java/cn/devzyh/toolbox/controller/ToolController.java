@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.client.ResourceAccessException;
 
 /**
  * 工具控制器
@@ -16,7 +17,7 @@ public class ToolController {
     /**
      * JSON编辑器
      */
-    @GetMapping(value = {"/json", "/json/"})
+    @GetMapping("/json")
     public String tool() {
         return AppConstant.ViewPath.JSON;
     }
@@ -24,7 +25,7 @@ public class ToolController {
     /**
      * XML编辑器
      */
-    @GetMapping(value = {"/xml", "/xml/"})
+    @GetMapping("/xml")
     public String xml() {
         return AppConstant.ViewPath.XML;
     }
@@ -32,7 +33,7 @@ public class ToolController {
     /**
      * 文本差异对比
      */
-    @GetMapping(value = {"/diff", "/diff/"})
+    @GetMapping("/diff")
     public String diff() {
         return AppConstant.ViewPath.DIFF;
     }
@@ -40,7 +41,7 @@ public class ToolController {
     /**
      * XSLT编辑器
      */
-    @GetMapping(value = {"/xslt", "/xslt/"})
+    @GetMapping("/xslt")
     public String xslt() {
         return AppConstant.ViewPath.XSLT;
     }
@@ -48,22 +49,28 @@ public class ToolController {
     /**
      * 文本处理
      */
-    @GetMapping(value = {"/code", "/code/", "/code/{type}", "/code/{key}/"})
+    @GetMapping(value = {"/code", "/code/{type}"})
     public String code(@PathVariable(required = false) String type, Model model) {
-        if (StrUtil.isNotBlank(type)) {
+        if (StrUtil.isBlank(type)) {
+            type = AppConstant.SUPPORT_TYPES.keySet().stream().findFirst().orElseThrow();
+        } else {
             type = type.toLowerCase();
-            if (!AppConstant.ViewKey.SUPPORT_TYPES.contains(type)) {
-                type = null;
-            }
         }
+
+        if (!AppConstant.SUPPORT_TYPES.containsKey(type)) {
+            throw new ResourceAccessException(type);
+        }
+
         model.addAttribute(AppConstant.ViewKey.TYPE, type);
+        model.addAttribute(AppConstant.ViewKey.TYPE_TEXT, AppConstant.SUPPORT_TYPES.get(type));
+        model.addAttribute(AppConstant.ViewKey.SUPPORT_TYPES, AppConstant.SUPPORT_TYPES);
         return AppConstant.ViewPath.CODE;
     }
 
     /**
      * Unix时间戳
      */
-    @GetMapping(value = {"/unix", "/unix/"})
+    @GetMapping("/unix")
     public String unix() {
         return AppConstant.ViewPath.UNIX;
     }

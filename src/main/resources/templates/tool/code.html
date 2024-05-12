@@ -4,54 +4,29 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title th:text="${'URL编码-' + title}">URL编码</title>
+    <title th:text="${ typeText + '-' + title}"></title>
     <link rel="icon" href="/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" th:href="${cdn + '/layui/2.9.9/css/layui.min.css'}">
     <link rel="stylesheet" href="/code/css/ext.css">
-    <script th:src="${cdn + '/layui/2.9.9/layui.min.js'}"></script>
 </head>
 
 <body>
 <div>
     <div class="layui-tab layui-tab-brief">
         <ul class="layui-tab-title">
-            <li class="layui-this"><a href="/code">URLEncode</a></li>
-            <li><a href="/code/base64">Base64</a></li>
-            <li><a href="/code/md5">MD5加密</a></li>
-            <li><a href="/code/unicode">Unicode</a></li>
+            <li th:each="e : ${supportTypes}" th:class="${type == e.key ? 'layui-this' : ''}">
+                <a th:href="${'/code/' + e.key}" th:text="${e.value}"></a>
+            </li>
         </ul>
         <div class=" layui-tab-content">
-            <div class="layui-tab-item layui-show">
-                <div class="layui-form">
-                    <div class="layui-form-item layui-form-text">
-                        <label class="layui-form-label">输入</label>
-                        <div class="layui-input-block">
-                            <textarea id="urlInput" placeholder="请输入内容" class="layui-textarea"
-                                      rows="10"></textarea>
-                        </div>
-                    </div>
-                    <div class="layui-form-item">
-                        <div class="layui-input-block">
-                            <button id="urlEncode" class="layui-btn layui-btn-normal">编码</button>
-                            <button id="urlDecode" class="layui-btn layui-btn-warm">解码</button>
-                            <button id="urlExchange" class="layui-btn">交换</button>
-                            <button id="urlClear" class="layui-btn layui-btn-danger">清空</button>
-                        </div>
-                    </div>
-                    <div class="layui-form-item layui-form-text">
-                        <label class="layui-form-label">输出</label>
-                        <div class="layui-input-block">
-                                <textarea id="urlOutput" placeholder="这里输出处理结果" class="layui-textarea"
-                                          readonly="readonly" rows="10"></textarea>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div th:insert="~{${'tool/code/' + type}}"></div>
         </div>
     </div>
 </div>
 
-<script src="/code/js/ext.js"></script>
+<script th:src="${cdn + '/layui/2.9.9/layui.min.js'}"></script>
+<script th:if="${type == 'md5'}" th:src="${cdn + '/crypto-js/4.2.0/crypto-js.min.js'}"></script>
+<script th:src="${'/code/' + type + '/js/ext.js'}"></script>
 </body>
 
 </html>

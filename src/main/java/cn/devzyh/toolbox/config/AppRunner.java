@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.Map;
 
 /**
- * 系统初始化
+ * 系统加载
  */
 @Slf4j
 @Component

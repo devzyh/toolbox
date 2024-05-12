@@ -1825,6 +1825,11 @@ sup {
     line-height: 20px
 }
 
+.footer .friends {
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
 .post {
     overflow: hidden;
     margin: 0 auto;
@@ -2429,15 +2434,35 @@ sup {
     border-left: 5px solid rgba(255, 255, 255, 0.08);
 }
 
-@media (max-width: 1280px) {
+#error .contar-wrap {
+    line-height: 50px;
+}
+
+#error .fill {
+    padding: 50px 0px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: #666666
+}
+
+#error .btns {
+    text-align: center;
+}
+
+#error .btns button {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
 
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .header .form {
         padding: 0 10px;
     }
@@ -2492,6 +2517,6 @@ sup {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
 
 }

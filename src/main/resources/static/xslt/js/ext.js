@@ -43,7 +43,7 @@ layui.use(function () {
     })
 
     $("#formatSource").click(function () {
-        sourceEditor.setValue($.format(sourceEditor.getValue(), { method: 'xml' }))
+        sourceEditor.setValue($.format(sourceEditor.getValue(), {method: 'xml'}))
     })
 
     $("#clear").click(function () {
@@ -54,18 +54,18 @@ layui.use(function () {
 // 屏蔽Ctrl+S
 window.addEventListener("keydown", function (e) {
     if (e.ctrlKey && e.code == 83) {
-        e.preventDefault();
+        e.preventDefault()
     }
 })
 
 // 转换原始数据
 function convertOriginalData(xslt, source) {
     try {
-        let processor = new XSLTProcessor();
-        processor.importStylesheet(new DOMParser().parseFromString(xslt, "text/xml"));
-        let result = processor.transformToDocument(new DOMParser().parseFromString(source, "text/xml"));
-        return result.body.getElementsByTagName("pre")[0].innerHTML;
+        let processor = new XSLTProcessor()
+        processor.importStylesheet(new DOMParser().parseFromString(xslt, "text/xml"))
+        let result = processor.transformToDocument(new DOMParser().parseFromString(source, "text/xml"))
+        return result.body.getElementsByTagName("pre")[0].innerHTML
     } catch (err) {
-        return "错误信息：" + err.message;
+        return "错误信息：" + err.message
     }
 }

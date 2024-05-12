@@ -3,14 +3,25 @@ package cn.devzyh.toolbox.constant;
 import cn.devzyh.toolbox.domain.app.AppData;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
  * 系统常量
  */
 public class AppConstant {
+
+    // 文本处理页面支持的类型
+    public static Map<String, String> SUPPORT_TYPES = new LinkedHashMap<>();
+
+    static {
+        SUPPORT_TYPES.put("url", "URL编码");
+        SUPPORT_TYPES.put("base64", "BASE64编码");
+        SUPPORT_TYPES.put("md5", "MD5加密");
+        SUPPORT_TYPES.put("unicode", "Unicode编码");
+        SUPPORT_TYPES.put("ttx", "TTX加解密");
+    }
 
     /**
      * 数据文件地址
@@ -42,8 +53,10 @@ public class AppConstant {
         public static String MORE = "more";
         // 文本处理类型
         public static String TYPE = "type";
-        // 文本处理页面支持的类型
-        public static List<String> SUPPORT_TYPES = Arrays.asList("url", "base64", "md5", "unicode", "ttx");
+        // 类型对应名称
+        public static String TYPE_TEXT = "typeText";
+        // 支持类型数据
+        public static String SUPPORT_TYPES = "supportTypes";
     }
 
     /**
