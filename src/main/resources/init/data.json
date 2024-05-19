@@ -164,6 +164,13 @@
         },
         {
           "icon": "fa czs-link-l",
+          "text": "Z-Library",
+          "href": "https://zh.zlibrary-be.se",
+          "target": "_blank",
+          "subText": "世界上最大的电子图书馆"
+        },
+        {
+          "icon": "fa czs-link-l",
           "text": "CrxDL",
           "href": "https://crxdl.com",
           "target": "_blank",
