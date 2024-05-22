@@ -74,10 +74,10 @@
         },
         {
           "icon": "fa czs-product-l",
-          "text": "Crontab工具",
-          "href": "https://cron.ciding.cc",
+          "text": "Cron工具",
+          "href": "https://www.matools.com/cron/?embed",
           "target": "_blank",
-          "subText": "在线Crontab表达式生成器"
+          "subText": "在线Cron表达式生成器"
         },
         {
           "icon": "fa czs-product-l",
@@ -85,13 +85,6 @@
           "href": "https://regex101.com",
           "target": "_blank",
           "subText": "编程语言正则表达式测试器"
-        },
-        {
-          "icon": "fa czs-product-l",
-          "text": "百度脑图",
-          "href": "https://naotu.baidu.com",
-          "target": "_blank",
-          "subText": "便捷的脑图编辑工具"
         },
         {
           "icon": "fa czs-product-l",
@@ -106,13 +99,6 @@
           "href": "https://plantuml.com/zh",
           "target": "_blank",
           "subText": "PlantUML是一个多功能组件，可快速、直接地创建图表"
-        },
-        {
-          "icon": "fa czs-product-l",
-          "text": "火山翻译",
-          "href": "https://translate.volcengine.com",
-          "target": "_blank",
-          "subText": "支持超过100种语种的免费在线翻译"
         }
       ]
     },
@@ -196,6 +182,13 @@
           "href": "https://svgtopng.com/zh",
           "target": "_blank",
           "subText": "软件允许您将SVG文档转换成PNG文档。"
+        },
+        {
+          "icon": "fa czs-product-l",
+          "text": "百度脑图",
+          "href": "https://naotu.baidu.com",
+          "target": "_blank",
+          "subText": "便捷的脑图编辑工具"
         }
       ]
     },
