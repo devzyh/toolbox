@@ -281,13 +281,6 @@
         },
         {
           "icon": "fa czs-file-l",
-          "text": "阿里云藏经阁",
-          "href": "https://developer.aliyun.com/ebook",
-          "target": "_blank",
-          "subText": "汇聚阿里巴巴技术实践精华，深度分享阿里工程师实战经验"
-        },
-        {
-          "icon": "fa czs-file-l",
           "text": "小傅哥 bugstack 虫洞栈",
           "href": "https://bugstack.cn",
           "target": "_blank",
@@ -320,6 +313,13 @@
           "href": "https://heapdump.cn",
           "target": "_blank",
           "subText": "有性能问题，上HeapDump性能社区"
+        },
+        {
+          "icon": "fa czs-file-l",
+          "text": "阿里云藏经阁",
+          "href": "https://developer.aliyun.com/ebook",
+          "target": "_blank",
+          "subText": "汇聚阿里巴巴技术实践精华，深度分享阿里工程师实战经验"
         },
         {
           "icon": "fa czs-file-l",
