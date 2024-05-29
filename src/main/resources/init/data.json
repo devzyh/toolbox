@@ -302,10 +302,10 @@
         },
         {
           "icon": "fa czs-file-l",
-          "text": "Java全栈知识体系",
-          "href": "https://pdai.tech",
+          "text": "凤凰架构",
+          "href": "https://icyfenix.cn",
           "target": "_blank",
-          "subText": "包含: Java, Spring, 数据库原理, 分布式, 中间件, 开发工具等"
+          "subText": "构建可靠的大型分布式系统"
         },
         {
           "icon": "fa czs-file-l",
@@ -323,10 +323,10 @@
         },
         {
           "icon": "fa czs-file-l",
-          "text": "凤凰架构",
-          "href": "https://icyfenix.cn",
+          "text": "Java全栈知识体系",
+          "href": "https://pdai.tech",
           "target": "_blank",
-          "subText": "构建可靠的大型分布式系统"
+          "subText": "包含: Java, Spring, 数据库原理, 分布式, 中间件, 开发工具等"
         },
         {
           "icon": "fa czs-file-l",
