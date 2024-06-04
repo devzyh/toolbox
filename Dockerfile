@@ -2,7 +2,7 @@ FROM registry.cn-hangzhou.aliyuncs.com/devzyh/openjdk:21-jdk-slim
 
 WORKDIR /toolbox
 
-ARG JAR_FILE=target/toolbox-*.jar
+ARG JAR_FILE=build/libs/toolbox-*.jar
 
 COPY ${JAR_FILE} app.jar
 
