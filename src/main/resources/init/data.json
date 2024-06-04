@@ -31,70 +31,70 @@
       "text": "数据编辑",
       "links": [
         {
-          "icon": "fa czs-product-l",
+          "icon": "fa czs-code-l",
           "text": "JSON编辑器",
           "href": "/json",
           "target": "_self",
           "subText": "简单的JSON文本编辑工具"
         },
         {
-          "icon": "fa czs-product-l",
+          "icon": "fa czs-code-l",
           "text": "XML编辑器",
           "href": "/xml",
           "target": "_self",
           "subText": "简单的XML美化压缩工具"
         },
         {
-          "icon": "fa czs-product-l",
+          "icon": "fa czs-code-l",
           "text": "文本差异对比",
           "href": "/diff",
           "target": "_self",
           "subText": "对比两个文本的内容并高亮显示"
         },
         {
-          "icon": "fa czs-product-l",
+          "icon": "fa czs-code-l",
           "text": "XSLT编辑器",
           "href": "/xslt",
           "target": "_self",
           "subText": "XML数据样式表功能测试"
         },
         {
-          "icon": "fa czs-product-l",
+          "icon": "fa czs-code-l",
           "text": "文本处理",
           "href": "/code",
           "target": "_self",
           "subText": "常用的文本处理程序"
         },
         {
-          "icon": "fa czs-product-l",
+          "icon": "fa czs-code-l",
           "text": "Unix时间戳",
           "href": "/unix",
           "target": "_self",
           "subText": "Unix时间戳在线转换工具"
         },
         {
-          "icon": "fa czs-product-l",
+          "icon": "fa czs-code-l",
           "text": "Cron工具",
           "href": "https://www.matools.com/cron/?embed",
           "target": "_blank",
           "subText": "在线Cron表达式生成器"
         },
         {
-          "icon": "fa czs-product-l",
+          "icon": "fa czs-code-l",
           "text": "正则表达式",
           "href": "https://regex101.com",
           "target": "_blank",
           "subText": "编程语言正则表达式测试器"
         },
         {
-          "icon": "fa czs-product-l",
+          "icon": "fa czs-code-l",
           "text": "draw.io",
           "href": "https://app.diagrams.net",
           "target": "_blank",
           "subText": "图表软件和流程图制作工具"
         },
         {
-          "icon": "fa czs-product-l",
+          "icon": "fa czs-code-l",
           "text": "PlantUML",
           "href": "https://plantuml.com/zh",
           "target": "_blank",
@@ -108,17 +108,10 @@
       "links": [
         {
           "icon": "fa czs-link-l",
-          "text": "GitHub加速下载",
-          "href": "https://github.js.cn",
+          "text": "通义千问",
+          "href": "https://tongyi.aliyun.com/qianwen",
           "target": "_blank",
-          "subText": "支持release、archive以及文件，也可直接拼接URL下载"
-        },
-        {
-          "icon": "fa czs-link-l",
-          "text": "ToolTT在线工具箱",
-          "href": "https://tooltt.com",
-          "target": "_blank",
-          "subText": "在线工具箱:免安装,在线使用,程序员编程开发必备工具箱"
+          "subText": "通情，达义。你的全能AI助手"
         },
         {
           "icon": "fa czs-link-l",
@@ -126,6 +119,13 @@
           "href": "https://dida365.com/signin",
           "target": "_blank",
           "subText": "在滴答清单中记录和规划大小事务、用更少的时间达成目标"
+        },
+        {
+          "icon": "fa czs-link-l",
+          "text": "ToolTT在线工具箱",
+          "href": "https://tooltt.com",
+          "target": "_blank",
+          "subText": "在线工具箱:免安装,在线使用,程序员编程开发必备工具箱"
         },
         {
           "icon": "fa czs-link-l",
@@ -174,7 +174,7 @@
           "text": "高清应用图标下载",
           "href": "https://jiejingku.net/icon/index.html",
           "target": "_blank",
-          "subText": ""
+          "subText": "高清应用图标下载"
         },
         {
           "icon": "fa czs-link-l",
@@ -184,7 +184,7 @@
           "subText": "软件允许您将SVG文档转换成PNG文档。"
         },
         {
-          "icon": "fa czs-product-l",
+          "icon": "fa czs-link-l",
           "text": "百度脑图",
           "href": "https://naotu.baidu.com",
           "target": "_blank",
@@ -197,70 +197,70 @@
       "text": "文档链接",
       "links": [
         {
-          "icon": "fa czs-file-l",
+          "icon": "fa czs-doc-file-l",
           "text": "On Java8",
           "href": "https://gitee.com/lingcoder/OnJava8/tree/1ef7ec48e492862300e667e24c245e9b3a5ccd98",
           "target": "_blank",
           "subText": "《On Java 8》中文版"
         },
         {
-          "icon": "fa czs-file-l",
+          "icon": "fa czs-doc-file-l",
           "text": "Java8文档",
           "href": "https://docs.oracle.com/javase/8/docs/api",
           "target": "_blank",
           "subText": "Java8官方文档"
         },
         {
-          "icon": "fa czs-file-l",
+          "icon": "fa czs-doc-file-l",
           "text": "Java规范",
           "href": "https://docs.oracle.com/javase/specs/index.html",
           "target": "_blank",
           "subText": "Java语言和虚拟机规范"
         },
         {
-          "icon": "fa czs-file-l",
+          "icon": "fa czs-doc-file-l",
           "text": "Spring文档",
           "href": "https://spring.io/projects",
           "target": "_blank",
           "subText": "Spring项目官方文档"
         },
         {
-          "icon": "fa czs-file-l",
+          "icon": "fa czs-doc-file-l",
           "text": "Mybatis文档",
           "href": "https://mybatis.org/mybatis-3/zh/index.html",
           "target": "_blank",
           "subText": "Mybatis官方中文文档"
         },
         {
-          "icon": "fa czs-file-l",
+          "icon": "fa czs-doc-file-l",
           "text": "Java开发手册",
           "href": "https://github.com/alibaba/p3c",
           "target": "_blank",
           "subText": "阿里巴巴Java开发手册"
         },
         {
-          "icon": "fa czs-file-l",
+          "icon": "fa czs-doc-file-l",
           "text": "Web开发技术",
           "href": "https://developer.mozilla.org/zh-CN/docs/Web",
           "target": "_blank",
           "subText": "面向Web开发者的文档"
         },
         {
-          "icon": "fa czs-file-l",
+          "icon": "fa czs-doc-file-l",
           "text": "Redis命令参考",
           "href": "http://doc.redisfans.com",
           "target": "_blank",
           "subText": "本文档是 Redis Command Reference 和 Redis Documentation 的中文翻译版"
         },
         {
-          "icon": "fa czs-file-l",
+          "icon": "fa czs-doc-file-l",
           "text": "Arthas文档",
           "href": "https://arthas.aliyun.com/doc/quick-start.html",
           "target": "_blank",
           "subText": "Arthas 是Alibaba开源的Java诊断工具，深受开发者喜爱"
         },
         {
-          "icon": "fa czs-file-l",
+          "icon": "fa czs-doc-file-l",
           "text": "OI Wiki",
           "href": "https://oi-wiki.org",
           "target": "_blank",
@@ -273,70 +273,70 @@
       "text": "技术博客",
       "links": [
         {
-          "icon": "fa czs-file-l",
+          "icon": "fa czs-product-l",
           "text": "菜鸟教程",
           "href": "https://www.runoob.com",
           "target": "_blank",
           "subText": "提供了编程的基础技术教程, 介绍了各种编程语言的基础知识"
         },
         {
-          "icon": "fa czs-file-l",
+          "icon": "fa czs-product-l",
           "text": "小傅哥 bugstack 虫洞栈",
           "href": "https://bugstack.cn",
           "target": "_blank",
           "subText": "重学Java设计模式, 字节码编程, 中间件, Spring, Java基础, 面经手册"
         },
         {
-          "icon": "fa czs-file-l",
+          "icon": "fa czs-product-l",
           "text": "Java 面试指南",
           "href": "https://javaguide.cn",
           "target": "_blank",
           "subText": "一份涵盖大部分 Java 程序员所需要掌握的核心知识"
         },
         {
-          "icon": "fa czs-file-l",
+          "icon": "fa czs-product-l",
           "text": "凤凰架构",
           "href": "https://icyfenix.cn",
           "target": "_blank",
           "subText": "构建可靠的大型分布式系统"
         },
         {
-          "icon": "fa czs-file-l",
+          "icon": "fa czs-product-l",
           "text": "并发编程网",
           "href": "https://ifeve.com",
           "target": "_blank",
           "subText": "让天下没有难学的技术"
         },
         {
-          "icon": "fa czs-file-l",
+          "icon": "fa czs-product-l",
           "text": "HeapDump",
           "href": "https://heapdump.cn",
           "target": "_blank",
           "subText": "有性能问题，上HeapDump性能社区"
         },
         {
-          "icon": "fa czs-file-l",
+          "icon": "fa czs-product-l",
           "text": "阿里云藏经阁",
           "href": "https://developer.aliyun.com/ebook",
           "target": "_blank",
           "subText": "汇聚阿里巴巴技术实践精华，深度分享阿里工程师实战经验"
         },
         {
-          "icon": "fa czs-file-l",
+          "icon": "fa czs-product-l",
           "text": "Java全栈知识体系",
           "href": "https://pdai.tech",
           "target": "_blank",
           "subText": "包含: Java, Spring, 数据库原理, 分布式, 中间件, 开发工具等"
         },
         {
-          "icon": "fa czs-file-l",
+          "icon": "fa czs-product-l",
           "text": "TypeScript 入门教程",
           "href": "https://ts.xcatliu.com",
           "target": "_blank",
           "subText": "从 JavaScript 程序员的角度总结思考，循序渐进的理解 TypeScript"
         },
         {
-          "icon": "fa czs-file-l",
+          "icon": "fa czs-product-l",
           "text": "Javadoop",
           "href": "https://javadoop.com",
           "target": "_blank",
