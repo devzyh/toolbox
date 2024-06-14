@@ -27,7 +27,6 @@ jobs:
 
       - name: Build and push docker images
         run: |
-          docker-compose build
           registry="registry.cn-hangzhou.aliyuncs.com/devzyh/"
           service="toolbox"
           docker build -t ${service} .
