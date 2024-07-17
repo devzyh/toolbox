@@ -1,4 +1,4 @@
-FROM registry.cn-hangzhou.aliyuncs.com/devzyh-mirror/openjdk:21-jdk-slim
+FROM openjdk:21-jdk-slim
 
 WORKDIR /toolbox
 
