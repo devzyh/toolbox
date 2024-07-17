@@ -1,0 +1,35 @@
+
+name: Docker Image
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: docker-image
+    strategy:
+      matrix:
+        java: [ 21 ]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK ${{ matrix.java }}
+        uses: actions/setup-java@v4
+        with:
+          java-version: ${{ matrix.java }}
+          distribution: 'zulu'
+
+      - name: Gradle build
+        run: sh gradlew build
+
+      - name: Login to docker registry
+        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }} registry.cn-hangzhou.aliyuncs.com
+
+      - name: Build and push docker images
+        run: |
+          registry="registry.cn-hangzhou.aliyuncs.com/devzyh/"
+          service="toolbox"
+          docker build -t ${service} .
+          docker tag ${service}:latest ${registry}${service}:latest
+          docker push ${registry}${service}:latest
