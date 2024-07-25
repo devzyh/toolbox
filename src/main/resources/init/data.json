@@ -242,10 +242,10 @@
         },
         {
           "icon": "fa czs-doc-file-l",
-          "text": "RuoYi-Cloud-Plus",
-          "href": "https://plus-doc.dromara.org/#/ruoyi-cloud-plus",
+          "text": "RuoYi-Plus",
+          "href": "https://plus-doc.dromara.org",
           "target": "_blank",
-          "subText": "重写RuoYi-Cloud全方位升级(不兼容原框架)"
+          "subText": "真正面向企业级的应用框架"
         },
         {
           "icon": "fa czs-doc-file-l",
