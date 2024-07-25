@@ -2,7 +2,7 @@
   "title": "软件工具箱",
   "cdn": "//cdn.staticfile.net",
   "limit": 10,
-  "search": "https://cn.bing.com/search?q=-csdn ",
+  "search": "https://cn.bing.com/search?q=",
   "navs": [
     {
       "text": "博客",
@@ -228,10 +228,10 @@
         },
         {
           "icon": "fa czs-doc-file-l",
-          "text": "Java开发手册",
-          "href": "https://github.com/alibaba/p3c",
+          "text": "Redis命令参考",
+          "href": "http://doc.redisfans.com",
           "target": "_blank",
-          "subText": "阿里巴巴Java开发手册"
+          "subText": "本文档是 Redis Command Reference 和 Redis Documentation 的中文翻译版"
         },
         {
           "icon": "fa czs-doc-file-l",
@@ -242,10 +242,10 @@
         },
         {
           "icon": "fa czs-doc-file-l",
-          "text": "Redis命令参考",
-          "href": "http://doc.redisfans.com",
+          "text": "RuoYi-Cloud-Plus",
+          "href": "https://plus-doc.dromara.org/#/ruoyi-cloud-plus",
           "target": "_blank",
-          "subText": "本文档是 Redis Command Reference 和 Redis Documentation 的中文翻译版"
+          "subText": "重写RuoYi-Cloud全方位升级(不兼容原框架)"
         },
         {
           "icon": "fa czs-doc-file-l",
@@ -253,6 +253,13 @@
           "href": "https://arthas.aliyun.com/doc/quick-start.html",
           "target": "_blank",
           "subText": "Arthas 是Alibaba开源的Java诊断工具，深受开发者喜爱"
+        },
+        {
+          "icon": "fa czs-doc-file-l",
+          "text": "Java开发手册",
+          "href": "https://github.com/alibaba/p3c",
+          "target": "_blank",
+          "subText": "阿里巴巴Java开发手册"
         },
         {
           "icon": "fa czs-doc-file-l",
