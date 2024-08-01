@@ -1,4 +1,4 @@
-FROM bellsoft/liberica-openjdk-debian:17.0.12-cds
+FROM bellsoft/liberica-openjdk-alpine:17.0.12-cds
 
 LABEL maintainer="devzyh"
 
