@@ -138,17 +138,10 @@
         },
         {
           "icon": "fa czs-link-l",
-          "text": "httpbin.org",
-          "href": "https://httpbin.org",
-          "target": "_blank",
-          "subText": "一个简单的HTPP请求响应网站"
-        },
-        {
-          "icon": "fa czs-link-l",
           "text": "Z-Library",
-          "href": "https://zh.zlibrary-be.se",
+          "href": "https://zh.z-lib.gs/",
           "target": "_blank",
-          "subText": "世界上最大的电子图书馆"
+          "subText": "世界上最大的电子图书馆（需科学）"
         },
         {
           "icon": "fa czs-link-l",
@@ -159,17 +152,24 @@
         },
         {
           "icon": "fa czs-link-l",
+          "text": "httpbin.org",
+          "href": "https://httpbin.org",
+          "target": "_blank",
+          "subText": "一个简单的HTPP请求响应网站"
+        },
+        {
+          "icon": "fa czs-link-l",
+          "text": "httpsok",
+          "href": "https://httpsok.com",
+          "target": "_blank",
+          "subText": "SSL证书自动续期"
+        },
+        {
+          "icon": "fa czs-link-l",
           "text": "SSL/TLS安全评估",
           "href": "https://myssl.com",
           "target": "_blank",
           "subText": "您部署的HTTPS网站安全吗"
-        },
-        {
-          "icon": "fa czs-link-l",
-          "text": "高清应用图标下载",
-          "href": "https://jiejingku.net/icon/index.html",
-          "target": "_blank",
-          "subText": "高清应用图标下载"
         },
         {
           "icon": "fa czs-link-l",
@@ -184,6 +184,13 @@
           "href": "https://naotu.baidu.com",
           "target": "_blank",
           "subText": "便捷的脑图编辑工具"
+        },
+        {
+          "icon": "fa czs-link-l",
+          "text": "高清应用图标下载",
+          "href": "https://jiejingku.net/icon/index.html",
+          "target": "_blank",
+          "subText": "高清应用图标下载"
         }
       ]
     },
