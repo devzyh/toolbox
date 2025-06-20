@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///toolbox?useSSL=false&characterEncoding=UTF-8
+    username: root
+    password: root
+  security:
+    user:
+      name: caom
+      password: caom
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: cn.devzyh.toolbox.domain
+  configuration:
+    map-underscore-to-camel-case: true

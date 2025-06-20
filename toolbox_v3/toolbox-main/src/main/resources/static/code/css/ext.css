@@ -1,0 +1,28 @@
+body {
+    margin: 20px;
+}
+
+.layui-input-block textarea {
+    resize: none;
+}
+
+.layui-form-item .layui-input-block button {
+    cursor: pointer;
+}
+
+.layui-form-item .layui-form-label {
+    width: 30px;
+    padding-left: 0px;
+}
+
+.layui-form-item .layui-input-block {
+    margin-left: 0px;
+}
+
+.layui-btn {
+    margin-top: 3px;
+}
+
+.layui-btn+.layui-btn {
+    margin-left: 0px;
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "JSON编辑器",
+    "href": "/json",
+    "target": "_self",
+    "remark": "简单的JSON文本编辑工具，可以对数据进行格式化和反格式化"
+  },
+  {
+    "name": "XML编辑器",
+    "href": "/xml",
+    "target": "_self",
+    "remark": "简单的XML美化压缩工具"
+  },
+  {
+    "name": "文本差异对比",
+    "href": "/diff",
+    "target": "_self",
+    "remark": "对比两个文本的内容并高亮显示"
+  },
+  {
+    "name": "XSLT编辑器",
+    "href": "/xslt",
+    "target": "_self",
+    "remark": "XML数据样式表功能测试"
+  },
+  {
+    "name": "加密解密",
+    "href": "/code",
+    "target": "_self",
+    "remark": "支持常见的加密与解密技术"
+  },
+  {
+    "name": "Unix时间戳",
+    "href": "/unix",
+    "target": "_self",
+    "remark": "Unix时间戳在线转换工具"
+  },
+  {
+    "name": "Cron表达式",
+    "href": "/cron",
+    "target": "_self",
+    "remark": "Crontab计划任务表达式在线生成"
+  },
+  {
+    "name": "正则表达式",
+    "href": "https://regex101.com/",
+    "target": "_blank",
+    "remark": "常用编程语言正则表达式测试器"
+  },
+  {
+    "name": "Xmind",
+    "href": "https://xmind.works/?auth=false",
+    "target": "_blank",
+    "remark": "便捷的脑图编辑工具"
+  },
+  {
+    "name": "Drawio",
+    "href": "https://app.diagrams.net/",
+    "target": "_blank",
+    "remark": "图表软件和流程图制作工具"
+  }
+]

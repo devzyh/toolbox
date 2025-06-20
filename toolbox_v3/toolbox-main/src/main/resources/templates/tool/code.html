@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title th:text="${ typeText + '-' + title}">编码转换</title>
+    <link rel="stylesheet" href="/libs/layui/2.9.18/css/layui.css">
+    <link rel="stylesheet" href="/code/css/ext.css">
+</head>
+
+<body>
+<div>
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li th:each="e : ${supportTypes}" th:class="${type == e.key ? 'layui-this' : ''}">
+                <a th:href="${'/code/' + e.key}" th:text="${e.value}"></a>
+            </li>
+        </ul>
+        <div class=" layui-tab-content">
+            <div th:insert="~{${'tool/code/' + type}}"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/layui/2.9.18/layui.js"></script>
+<script th:if="${type == 'md5'}" th:src="${cdn + '/crypto-js/4.2.0/crypto-js.min.js'}"></script>
+<script th:src="${'/code/' + type + '/js/ext.js'}"></script>
+</body>
+
+</html>

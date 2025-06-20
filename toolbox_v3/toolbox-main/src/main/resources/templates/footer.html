@@ -1,0 +1,25 @@
+<div class="footer">
+    <div class="grid friends" >
+        <div class="grid-col">
+            友情链接：
+            <a th:each="f: ${friends}" th:href="${f.href}" th:target="${f.target}"
+               th:text="${f.text}">友链</a>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="grid-col">
+            <div class="footer-copyright">
+                <p>
+                    <span>2021 &copy; </span>
+                    <a href="https://gitee.com/devzyh/toolbox" target="_blank">TOOLBOX</a>
+                    <span> - </span>
+                    <a href="/" target="_blank" th:text="${title}">title</a>
+                </p>
+                <p>
+                    <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">鄂ICP备2021005865号</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

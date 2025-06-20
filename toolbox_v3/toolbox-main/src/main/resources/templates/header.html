@@ -1,0 +1,15 @@
+<div class="header">
+    <h1 class="site-title"><a href="/" th:text="${title}">title</a></h1>
+
+    <div>
+        <div class="form input-icon">
+            <input type="text" id="searchKey" value="" class="form-control" placeholder="善用搜索，事半功倍"
+                   autocomplete="off" th:search="${search}"/>
+            <button type="button" id="search" class="btn-icon"><i class="czs-search-l"></i></button>
+        </div>
+    </div>
+
+    <div class="store-type">
+        <a class="store-btn" th:each="n: ${navs}" th:href="${n.href}" th:text="${n.text}" th:target="${n.target}"></a>
+    </div>
+</div>

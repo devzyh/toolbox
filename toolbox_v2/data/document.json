@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Java规范",
+    "href": "https://docs.oracle.com/javase/specs/index.html",
+    "target": "_blank",
+    "remark": "Java语言和虚拟机规范"
+  },
+  {
+    "name": "Apache项目",
+    "href": "https://www.apache.org/index.html#projects-list",
+    "target": "_blank",
+    "remark": "Apache基金会官方项目列表"
+  },
+  {
+    "name": "Java8文档",
+    "href": "https://docs.oracle.com/javase/8/docs/api/",
+    "target": "_blank",
+    "remark": "Java8官方文档"
+  },
+  {
+    "name": "Spring文档",
+    "href": "https://spring.io/projects",
+    "target": "_blank",
+    "remark": "Spring项目官方文档"
+  },
+  {
+    "name": "Mybatis文档",
+    "href": "https://mybatis.org/mybatis-3/zh/index.html",
+    "target": "_blank",
+    "remark": "Mybatis官方中文文档"
+  },
+  {
+    "name": "Web开发技术",
+    "href": "https://developer.mozilla.org/zh-CN/docs/Web",
+    "target": "_blank",
+    "remark": "面向Web开发者的文档"
+  },
+  {
+    "name": "Java开发手册",
+    "href": "https://github.com/alibaba/p3c",
+    "target": "_blank",
+    "remark": "阿里巴巴Java开发手册"
+  },
+  {
+    "name": "On Java8",
+    "href": "https://gitee.com/lingcoder/OnJava8/tree/1ef7ec48e492862300e667e24c245e9b3a5ccd98",
+    "target": "_blank",
+    "remark": "《On Java 8》中文版"
+  },
+  {
+    "name": "Docs4dev",
+    "href": "https://www.docs4dev.com/docs/zh",
+    "target": "_blank",
+    "remark": "开发文档中文版汇总"
+  },
+  {
+    "name": "LABULADONG 的算法网站",
+    "href": "https://labuladong.github.io/algo/",
+    "target": "_blank",
+    "remark": "labuladong 的刷题全家桶"
+  },
+  {
+    "name": "OI Wiki",
+    "href": "https://oi-wiki.org/",
+    "target": "_blank",
+    "remark": "一个免费开放且持续更新的编程竞赛知识整合站点"
+  },
+  {
+    "name": "Arthas文档",
+    "href": "https://arthas.aliyun.com/doc/quick-start.html",
+    "target": "_blank",
+    "remark": "Arthas 是Alibaba开源的Java诊断工具，深受开发者喜爱"
+  },
+  {
+    "name": "Redis命令参考",
+    "href": "http://doc.redisfans.com/",
+    "target": "_blank",
+    "remark": "本文档是 Redis Command Reference 和 Redis Documentation 的中文翻译版"
+  },
+  {
+    "name": "Java8特性",
+    "href": "https://github.com/biezhi/learn-java8",
+    "target": "_blank",
+    "remark": "在这里你可以学习到 Java8 中的核心特性以及使用场景"
+  }
+]

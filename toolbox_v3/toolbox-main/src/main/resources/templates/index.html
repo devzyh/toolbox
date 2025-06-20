@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title th:text="${title}">DEVZYH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/libs/layui/2.9.18/css/layui.css">
+    <link rel="stylesheet" href="/main/css/main.css">
+</head>
+<body>
+
+<div class="page-wrapper">
+
+    <div th:insert="~{header}"></div>
+
+    <div class="page-main">
+        <div th:each="link : ${links}">
+            <div class="grid">
+                <div class="grid-col">
+                    <h1 class="heading">
+                        <span class="heading-title" th:text="${link.text}"></span>
+                    </h1>
+                </div>
+            </div>
+            <div class="grid links">
+                <div class="grid-col grid-col-2" th:each="l, stat : ${link.links}">
+                    <a th:if="${stat.index < limit}" th:href="${l.href}" th:target="${l.target}">
+                        <div class="link-item">
+                            <i th:class="${l.icon}"></i>
+                            <div class="link-info">
+                                <h2 th:text="${l.text}"></h2>
+                                <p class="link-meta">
+                                    <span class="date fl" th:text="${l.subText}"></span>
+                                    <span class="view fr" th:if="${l.target == '_self'}">当前页面</span>
+                                    <span class="view fr" th:if="${l.target == '_blank'}">新的页面</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="text-center">
+                <a class="btn" th:href="${'/more/'+ link.code}">更多链接</a>
+            </div>
+        </div>
+    </div>
+
+    <div th:insert="~{footer}"></div>
+
+</div>
+
+<script src="/libs/layui/2.9.18/layui.js"></script>
+<script src="/main/js/main.js"></script>
+</body>
+</html>

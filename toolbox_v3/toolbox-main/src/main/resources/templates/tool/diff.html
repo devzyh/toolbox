@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title th:text="${'文本差异对比-' + title}">文本差异对比</title>
+    <link rel=stylesheet href="/libs/codemirror/4.9.0/codemirror.min.css">
+    <link rel=stylesheet href="/libs/codemirror/4.9.0/addon/merge/merge.min.css">
+    <link rel=stylesheet href="/diff/css/ext.css">
+</head>
+
+<body onload="initUI()">
+
+<div id="view"></div>
+
+<script src="/libs/codemirror/4.9.0/codemirror.min.js"></script>
+<script src="/libs/diff_match_patch/20121119/diff_match_patch.js"></script>
+<script src="/libs/codemirror/4.9.0/addon/merge/merge.min.js"></script>
+<script src="/diff/js/ext.js"></script>
+</body>
+
+</html>

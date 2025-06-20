@@ -1,0 +1,98 @@
+[
+  {
+    "name": "滴答清单",
+    "href": "https://dida365.com/signin",
+    "target": "_blank",
+    "remark": "在滴答清单中记录和规划大小事务、用更少的时间达成目标"
+  },
+  {
+    "name": "腾讯翻译",
+    "href": "https://fanyi.qq.com/",
+    "target": "_blank",
+    "remark": "全新人工智能翻译， 句子、文章、论文、资料翻译首选"
+  },
+  {
+    "name": "ToolTT在线工具箱",
+    "href": "https://tooltt.com/",
+    "target": "_blank",
+    "remark": "在线工具箱:免安装,在线使用,程序员编程开发必备工具箱"
+  },
+  {
+    "name": "Unicode字符百科",
+    "href": "https://unicode-table.com/cn/",
+    "target": "_blank",
+    "remark": "Unicode(万国码、国际码、统一码) 字符搜索Web服务 "
+  },
+  {
+    "name": "httpbin.org",
+    "href": "https://httpbin.org",
+    "target": "_blank",
+    "remark": "一个简单的HTPP请求响应网站"
+  },
+  {
+    "name": "Git大全",
+    "href": "https://gitee.com/all-about-git",
+    "target": "_blank",
+    "remark": "最全面的 Git 资源索引以及常用命令教程"
+  },
+  {
+    "name": "变量命名",
+    "href": "https://unbug.github.io/codelf/",
+    "target": "_blank",
+    "remark": "Codelf,变量命名,函数命名,方法命名,变量命名神器,GitHub 分组"
+  },
+  {
+    "name": "项目文档工具",
+    "href": "https://docsify.js.org/#/zh-cn/",
+    "target": "_blank",
+    "remark": "一个神奇的文档网站生成器"
+  },
+  {
+    "name": "IDEA试用",
+    "href": "https://gitee.com/pengzhile/ide-eval-resetter",
+    "target": "_blank",
+    "remark": "Jetbrains系列产品重置试用方法"
+  },
+  {
+    "name": "程序员做饭指南",
+    "href": "https://cook.aiurs.co/",
+    "target": "_blank",
+    "remark": "程序员在家做饭方法指南"
+  },
+  {
+    "name": "CrxDL",
+    "href": "https://crxdl.com/",
+    "target": "_blank",
+    "remark": "下载Chrome扩展插件Crx离线安装包"
+  },
+  {
+    "name": "SVG文件处理",
+    "href": "https://svgtopng.com/zh/",
+    "target": "_blank",
+    "remark": "软件允许您将SVG文档转换成PNG文档。"
+  },
+  {
+    "name": "Respeed Download",
+    "href": "https://respeed.chromiumer.com/",
+    "target": "_blank",
+    "remark": "主要用于文件下载加速（国内资源下载可能会更慢）"
+  },
+  {
+    "name": "代码在线高亮工具",
+    "href": "https://highlightcode.com/",
+    "target": "_blank",
+    "remark": "将高亮美化的代码一键粘贴到Word或OneNote中。"
+  },
+  {
+    "name": "高清应用图标下载",
+    "href": "https://jiejingku.net/icon/index.html",
+    "target": "_blank",
+    "remark": null
+  },
+  {
+    "name": "SSL/TLS安全评估",
+    "href": "https://myssl.com/",
+    "target": "_blank",
+    "remark": "您部署的HTTPS网站安全吗"
+  }
+]

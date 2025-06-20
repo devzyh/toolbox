@@ -1,0 +1,36 @@
+<div class="layui-tab-item layui-show">
+    <div class="layui-form">
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">输入</label>
+            <div class="layui-input-block">
+                            <textarea id="ttxInput" placeholder="请输入内容" class="layui-textarea"
+                                      rows="10"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">密码</label>
+            <div class="layui-input-block">
+                <input type="text" id="ttxSecret" autocomplete="off" placeholder="请输入密钥"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <div class="layui-input-block">
+                <button id="ttxEncrypt" class="layui-btn layui-btn-normal">加密</button>
+                <button id="ttxDecrypt" class="layui-btn layui-btn-warm">解密</button>
+                <a id="ttxCode" class="layui-btn layui-btn-info" target="_blank"
+                   href="https://gitee.com/devzyh/toolbox/blob/main/src/main/java/cn/devzyh/toolbox/util/TtxCryptUtil.java">
+                    代码
+                </a>
+                <button id="ttxClear" class="layui-btn layui-btn-danger">清空</button>
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">输出</label>
+            <div class="layui-input-block">
+                                <textarea id="ttxOutput" placeholder="这里输出处理结果" class="layui-textarea"
+                                          readonly="readonly" rows="10"></textarea>
+            </div>
+        </div>
+    </div>
+</div>

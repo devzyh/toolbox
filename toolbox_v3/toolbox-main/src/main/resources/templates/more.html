@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title th:text="${more.text}+'-'+${title}">search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/libs/layui/2.9.18/css/layui.css">
+    <link rel="stylesheet" href="/main/css/main.css">
+</head>
+<body>
+<div class="page-wrapper">
+
+    <div th:insert="~{header}"></div>
+
+    <div class="page-main" id="searchpage">
+
+        <div class="grid urls">
+            <div class="grid-col" th:each="l : ${more.links}">
+                <a th:href="${l.href}" th:target="${l.target}">
+                    <div class="link-item">
+                        <div class="link-info">
+                            <h2 th:text="${l.text}"></h2>
+                            <p class="excerpt" th:if="${l.subText == null || l.subText == ''}"
+                               th:text="${l.text}"></p>
+                            <p class="excerpt" th:if="${l.subText != null && l.subText != ''}"
+                               th:text="${l.subText}"></p>
+                            <p class="link-meta">
+                                <span class="date fl">
+                                  <span class="tag" th:text="${more.text}"></span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div th:insert="~{footer}"></div>
+
+</div>
+
+<script src="/libs/layui/2.9.18/layui.js"></script>
+<script src="/main/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+[
+  {
+    "name": "HeapDump",
+    "href": "https://heapdump.cn/",
+    "target": "_blank",
+    "remark": "有性能问题，上HeapDump性能社区"
+  },
+  {
+    "name": "菜鸟教程",
+    "href": "https://www.runoob.com",
+    "target": "_blank",
+    "remark": "提供了编程的基础技术教程, 介绍了各种编程语言的基础知识"
+  },
+  {
+    "name": "阿里云藏经阁",
+    "href": "https://developer.aliyun.com/ebook",
+    "target": "_blank",
+    "remark": "汇聚阿里巴巴技术实践精华，深度分享阿里工程师实战经验"
+  },
+  {
+    "name": "虫洞栈",
+    "href": "https://bugstack.cn/",
+    "target": "_blank",
+    "remark": "重学Java设计模式, 字节码编程, 中间件, Spring, Java基础, 面经手册"
+  },
+  {
+    "name": "Java全栈知识体系",
+    "href": "https://pdai.tech/",
+    "target": "_blank",
+    "remark": "包含: Java, Spring, 数据库原理, 分布式, 中间件, 开发工具等"
+  },
+  {
+    "name": "凤凰架构",
+    "href": "https://icyfenix.cn/",
+    "target": "_blank",
+    "remark": "构建可靠的大型分布式系统"
+  },
+  {
+    "name": "并发编程网",
+    "href": "https://ifeve.com/",
+    "target": "_blank",
+    "remark": "让天下没有难学的技术"
+  },
+  {
+    "name": "程序员DD",
+    "href": "https://blog.didispace.com/",
+    "target": "_blank",
+    "remark": "内容涵盖Java后端技术、微服务架构、运维开发等相关的研究与知识分享"
+  },
+  {
+    "name": "酷壳博客",
+    "href": "https://coolshell.cn/",
+    "target": "_blank",
+    "remark": "享受编程和技术所带来的快乐 – https://coolshell.cn"
+  },
+  {
+    "name": "JavaGuide",
+    "href": "https://javaguide.cn/",
+    "target": "_blank",
+    "remark": "一份涵盖大部分 Java 程序员所需要掌握的核心知识"
+  },
+  {
+    "name": "Java进阶知识",
+    "href": "https://doocs.github.io/advanced-java",
+    "target": "_blank",
+    "remark": "内容涵盖高并发、分布式、高可用、微服务、海量数据处理等"
+  },
+  {
+    "name": "Javadoop",
+    "href": "https://javadoop.com/",
+    "target": "_blank",
+    "remark": "来自魔都的程序员，在互联网摸爬滚打了很多年"
+  },
+  {
+    "name": "SpringForAll社区",
+    "href": "http://spring4all.com/",
+    "target": "_blank",
+    "remark": "专注服务Java和Spring开发者的技术社区"
+  },
+  {
+    "name": "三太子敖丙",
+    "href": "https://mp.weixin.qq.com/s/2l8iZeTRfMaUOcgtad1wIQ",
+    "target": "_blank",
+    "remark": "渣男两年文章汇总（附硬核面试点脑图）"
+  },
+  {
+    "name": "Java项目《谷粒商城》",
+    "href": "https://www.bilibili.com/video/BV1np4y1C7Yf",
+    "target": "_blank",
+    "remark": "微服务+分布式+全栈+集群+部署+自动化运维+可视化CICD"
+  },
+  {
+    "name": "编程帮",
+    "href": "http://www.biancheng.net/",
+    "target": "_blank",
+    "remark": "一个在线学习编程的网站，专注于分享优质编程教程"
+  }
+]

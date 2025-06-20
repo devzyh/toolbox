@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>软件工具箱</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="//cdn.staticfile.org/layui/2.8.3/css/layui.min.css">
+    <link rel="stylesheet" href="static/main/main.css">
+</head>
+<body>
+
+<div class="page-wrapper">
+
+    <div>
+        <div class="header">
+            <h1 class="site-title"><a href="/">软件工具箱</a></h1>
+
+            <div>
+                <div class="form input-icon">
+                    <input type="text" id="searchKey" value="" class="form-control" placeholder="善用搜索，事半功倍"
+                           autocomplete="off"/>
+                    <button type="button" id="search" class="btn-icon"><i class="czs-search-l"></i></button>
+                </div>
+            </div>
+
+            <div class="store-type">
+                <a class="store-btn" id="blog" href="#" target="_blank">博客</a>
+                <a class="store-btn" id="repo" href="#" target="_blank">代码</a>
+                <a class="store-btn" id="roadmap" href="#" target="_blank">技能</a>
+                <a class="store-btn" id="mail" href="#">私信</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-main">
+
+        <!-- 数据编辑 -->
+        <div class="grid">
+            <div class="grid-col">
+                <h1 class="heading">
+                    <span class="heading-title">数据编辑</span>
+                </h1>
+            </div>
+        </div>
+        <div class="grid links" id="editorLinks">
+        </div>
+        <div class="text-center" style="margin-bottom:20px;">
+            <a class="btn" href="/link/?t=editor">更多链接</a>
+        </div>
+
+        <!-- 辅助工具 -->
+        <div class="grid">
+            <div class="grid-col">
+                <h1 class="heading">
+                    <span class="heading-title">辅助工具</span>
+                </h1>
+            </div>
+        </div>
+        <div class="grid links" id="helperLinks">
+        </div>
+        <div class="text-center" style="margin-bottom:20px;">
+            <a class="btn" href="/link/?t=helper">更多链接</a>
+        </div>
+
+        <!-- 文档链接 -->
+        <div class="grid">
+            <div class="grid-col">
+                <h1 class="heading">
+                    <span class="heading-title">文档链接</span>
+                </h1>
+            </div>
+        </div>
+        <div class="grid links" id="documentLinks">
+        </div>
+        <div class="text-center" style="margin-bottom:20px;">
+            <a class="btn" href="/link/?t=document">更多链接</a>
+        </div>
+
+        <!-- 技术博客 -->
+        <div class="grid">
+            <div class="grid-col">
+                <h1 class="heading">
+                    <span class="heading-title">技术博客</span>
+                </h1>
+            </div>
+        </div>
+        <div class="grid links" id="blogLinks">
+        </div>
+        <div class="text-center" style="margin-bottom:20px;">
+            <a class="btn" href="/link/?t=blog">更多链接</a>
+        </div>
+
+        <!-- 数据模板 -->
+        <script id="linkTpl" type="text/html">
+            {{# layui.each(d, function(index, item){ }}
+            <div class="grid-col grid-col-2">
+                <a href="{{= item.href }}" target="{{= item.target }}" accesskey="1">
+                    <div class="link-item">
+                        <i class="fa czs-product-l"></i>
+                        <div class="link-info">
+                            <h2>{{= item.name }}</h2>
+                            <p class="link-meta">
+                                <span class="date fl">{{= item.remark }}</span>
+                                <span class="view fr">
+                                    {{#  if(item.target === '_self'){ }}当前页面{{#  } }}
+                                    {{#  if(item.target === '_blank'){ }}新的页面{{#  } }}
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {{#  }); }}
+        </script>
+
+    </div>
+
+    <div>
+        <div class="footer">
+            <div class="grid" style="padding-bottom: 10px;">
+                <div class="grid-col" style="font-size:15px;" id="friendLinks">
+                    <!-- 数据模板 -->
+                    <script id="friendTpl" type="text/html">
+                        {{# layui.each(d, function(index, item){ }}
+                        <a href="{{= item.href }}" target="_blank">{{= item.name }}</a>
+                        {{#  }); }}
+                    </script>
+                </div>
+
+            </div>
+
+            <div class="grid">
+                <div class="grid-col">
+                    <div class="footer-copyright">
+                        <p>
+                            <a href="https://www.devzyh.cn" target="_blank">软件工具箱</a>
+                            2021 &copy;
+                            <a href="http://blog.devzyh.cn" target="_blank">DEVZYH.CN</a>
+                        </p>
+                        <p>
+                            <a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow">鄂ICP备2021005865号</a>
+                        </p>
+                        <p>
+                            <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank"
+                               rel="nofollow">
+                                <img src="static/main/upyun.png" height="40px">
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="//cdn.staticfile.org/layui/2.8.3/layui.min.js"></script>
+<script src="static/main/main.js"></script>
+<script src="static/main/index.js"></script>
+</body>
+</html>
