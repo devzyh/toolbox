@@ -1,0 +1,1137 @@
+home:
+  categories:
+    newestTools: Latest Tools
+    favoriteTools: My collection.
+    allTools: All tools
+    favoritesDndToolTip: drag and drop to rearrange favorites
+  subtitle: toolbox based on it-tools customization
+  toggleMenu: switching menus
+  home: home page
+  star: star
+  nav:
+    git: Git repository
+    Blog: Blog
+    darkMode: Dark Mode
+    lightMode: Light mode
+    mode: color mode
+
+404:
+  notFound: 404 page does not exist
+  sorry: Sorry, the page doesn't seem to exist.
+  Maybe: Maybe there is something wrong with the cache, try forcing the page to refresh?
+  backHome: Return to Home Page
+
+favoriteButton:
+  remove: cancel the collection
+  add: add to the collection
+toolCard:
+  new: new
+search:
+  label: Search
+
+ui:
+  text-copyable:
+    Copied: Copied
+    copy-to-clipboard: copy to clipboard
+  command-palette:
+    placeholder: enter keywords search tool...
+    tools: tools
+    stars: star
+    random-tool: Random tool
+    random-tool-description: Select a tool at random from the list
+
+  format-transformer:
+    input-label: input
+    input-placeholder: input...
+    output-label: output
+  c-file-upload:
+    placeholder: Drag and drop files here or click to select files
+    browse: Browse files
+  c-input-text:
+    placeholder: entering text
+  c-select:
+    search-placeholder: search...
+    select-placeholder: Select an option
+    no-results: result not found
+
+tools:
+  categories:
+    favorite-tools: Collection
+    crypto: encryption
+    converter: Converters
+    web: Web
+    multimedia: Multimedia
+    development: Development
+    network: Network
+    Math: Mathematics
+    measurement: measurement
+    text: text
+    data: data
+
+  common:
+    input-label: input content
+    input-placeholder: please enter content...
+    output-label: output content
+    output-placeholder: The result will be output here...
+    copy: Copy
+    Copied: Copied content to clipboard
+    Yes: Yes
+    no: no
+
+  ascii-text-drawer:
+    title: ASCII WordArt
+    description: Create ASCII WordArt with Multiple Fonts and Styles
+    font: font
+    width: width
+    processing: loading fonts in...
+    errored: Current settings cause error
+
+  base64-file-converter:
+    title: Base64 File Converter
+    description: Convert a string, file, or image to a Base64 representation
+    to-file-title: Base64 to file
+    to-base64-title: file to Base64
+    name-label: the name of the file
+    name-placeholder: Download file name
+    extension-label: file type
+    extension-placeholder: Download file type
+    preview: preview pictures
+    download: downloading files
+
+  base64-string-converter:
+    title: Base64 Text Converter
+    description: Encoding and decoding a string to a Base64 representation
+    to-string-title: Base64 to a string
+    to-base64-title: String to Base64
+    url-safe: Use URL-safe strings
+    invalid-base64: Invalid Base64 string
+
+  basic-auth-generator:
+    title: Basic Authentication Generator
+    description: Generate Base64 Basic Authentication Headers from Username and Password
+    username: account number
+    password: password
+    header: request header information
+
+  bcrypt:
+    title: Bcrypt encryption
+    description: Hash and compare text strings with Bcrypt; Bcrypt is a Blowfish-based password hashing function
+    hash: encryption
+    compare: Contrast
+    string-label: input content
+    salt-label: key length
+    hash-label: encryption result
+    match-label: whether to match
+
+  benchmark-builder:
+    title: Benchmark Builder
+    description: Simple online benchmark builder makes it easy to compare execution times of tasks
+    suite-name: Suite name
+    suite-values: suite data
+    add-measure: Add metric data
+    delete-suite: delete suite
+    add-suite: add-suite
+    unit: unit
+    reset-suites: reset suites
+    position: serial number
+    suite: kit
+    samples: Sample
+    mean: mean
+    variance: Variance
+    copy-table: copy Markdown table
+    copy-list: Copy Markdown list
+
+  bip39-generator:
+    title: BIP39 Password Generator
+    description: Generate BIP39 passphrase from existing or random mnemonic, or get mnemonic from passphrase
+    language: Language
+    entropy: entropy
+    mnemonic: mnemonics
+    invalid-length: entropy length should be greater than or equal to 16, less than or equal to 32, and be a multiple of 4
+    invalid-format: Entropy should be a hexadecimal string
+    invalid-mnemonic: Invalid mnemonic
+
+  camera-recorder:
+    title: camera recorder
+    description: Take photos or record videos from a webcam or camera
+    not-supported: Your browser does not support video recording from webcam
+    permission-needed: You need to grant permission to use your camera and microphone
+    permission-blocked: Your browser has blocked the permission request or does not support it
+    grant-permission: grant permission
+    start-webcam: Starting the camera
+    take-screenshot: Screenshot
+    start-recording: start recording
+    pause: pause
+    resume: resume
+    stop: stop
+    recording-not-supported: Video recording is not supported in your browser
+    screenshot: Screenshot
+    video: video
+    audio: audio
+
+  case-converter:
+    title: Case Conversion
+    description: Change the case of strings and choose between different formats
+    lowercase: lowercase
+    uppercase: uppercase
+    camelcase: hump naming
+    capitalcase: Initial Capital
+    constantcase: All Capital Underline
+    dotcase: dot separation
+    headercase: Title Naming
+    noase: no case
+    paramcase: parameter naming
+    pascalcase: Pascal Named
+    pathcase: path naming
+    sentencecase: Sentence naming
+    snakecase: underline naming
+    mockingcase: simulating case
+
+  chronometer:
+    title: Timer
+    description: A simple timer
+    start: start
+    stop: stop
+    reset: reset
+
+  chmod-calculator:
+    title: Chmod Calculator
+    description: calculating chmod permissions and commands online
+    read: read
+    write: write
+    execute: execution
+    owner: owner
+    group: group
+    public: public
+
+  color-converter:
+    title: Color Converter
+    description: convert colors between different formats (hex, rgb, hsl, and css names)
+    picker: color picker
+    hex: hexadecimal
+    rgb: RGB
+    hsl: HSL
+    hwb: HWB
+    lch: LCH
+    cmyk: CMYK
+    name: name
+    placeholder-hex: e.g.#ff0000
+    placeholder-rgb: e.g.rgb(255,0,0)
+    placeholder-hsl: e.g.hsl(0,100%,50%)
+    placeholder-hwb: e.g.hwb(0,0%,0%)
+    placeholder-lch: e.g.lch(53.24,104.55,40.85)
+    placeholder-cmyk: e.g.cmyk(0,100%,100%,0)
+    placeholder-name: e.g.red
+
+  crontab-generator:
+    title: Crontab Expression Generation
+    description: Validate and generate the crontab and get the description of the cron expression
+    placeholder-cron: eg. * * * * *
+    label-verbose: verbose output
+    label-use-24-hour-time-format: Use 24-hour time format
+    label-days-start-at-0: week starts at 0
+    message-invalid-cron: This CRON expression is not valid
+    meaning-any-value: any value
+    equivalent-every-minute: once per minute
+    meaning-range-of-values: range values
+    equivalent-minutes-1-through-10: 1 to 10 minutes
+    meaning-list-of-values: list of values
+    equivalent-at-minutes-1-and-10: in the 1st and 10th minutes
+    meaning-step-values: step values
+    equivalent-every-10-minutes: every 10 minutes
+    meaning-once-year: Execute once every year at midnight on January 1
+    meaning-same-as-year: Same as year
+    meaning-once-monthly: Execute once at midnight on the first day of each month
+    meaning-once-weekly: Every Sunday morning
+    meaning-once-daily: Execute once every day at midnight
+    meaning-same-as-daily: Same as daily
+    meaning-once-hourly: Execute once at the beginning of every hour
+    meaning-run-at-startup: run at system startup
+    seconds: seconds
+    minute: minutes
+    hour: hours
+    day-of-month: the date
+    month: month
+    day-of-week: day of the week
+    symbol: symbol
+    meaning: Meaning
+    example: example
+    equivalent: Equivalent
+
+  date-converter:
+    title: Date Time Converter
+    description: Convert date and time to various formats
+    placeholder-date-string: eg:2023-10-05T14:48:00.000Z
+    label-js-locale-date-string: JS local date string
+    label-iso-8601: ISO 8601
+    label-iso-9075: ISO 9075
+    label-rfc-3339: RFC 3339
+    label-rfc-7231: RFC 7231
+    label-unix-timestamp: Unix timestamp
+    label-timestamp: Timestamp
+    label-utc-format: UTC format
+    label-mongo-objectid: Mongo ObjectID
+    label-excel-date-time: Excel date/time
+    message-invalid-date: This date is not valid in this format
+    invalid-date-placeholder: Invalid Date...
+
+  device-information:
+    title: device information
+    description: Get information about the current device (screen size, pixel ratio, user agent, etc.)
+    screen-section: Screen
+    device-section: device
+    screen-size: screen size
+    orientation: direction
+    orientation-angle: direction angle
+    color-depth: color depth
+    pixel-ratio: pixel ratio
+    window-size: window size
+    browser-vendor: browser vendor
+    languages: Language
+    platform: Platform
+    user-agent: user agent
+    unknown-value: Unknown
+
+  docker-run-to-docker-compose-converter:
+    title: Docker Command Converter
+    description: Convert docker run command line to docker-compose file
+    label-docker-run-command: Docker Run command
+    placeholder-your-docker-run-command: The Docker Run command you want to convert...
+    download-docker-compose-yml: Download docker-compose.yml
+    not-translatable-options: These options cannot be converted to docker-compose
+    not-implemented-options: These options have not been implemented and are therefore not converted to docker-compose
+    errors-occurred: The following error occurred
+    this-options-are-not-translatable: These options cannot be converted to docker-compose
+    this-options-are-not-implemented: These options are not yet implemented
+    the-following-errors-occured: The following error occurred
+    unknown-value: Unknown
+
+  email-normalizer:
+    title: Email Normative
+    description: Standardize email addresses to a standard format for easy comparison
+    raw-emails-to-normalize: Original Email
+    placeholder-your-emails-here: Put your emails here (one per line)...
+    normalized-emails: Normalized Email
+    placeholder-normalized-emails-will-appear-here: Normalized emails will be shown here...
+    clear-emails: Clear Email
+    copy-normalized-emails: Copy normalized email
+
+  emoji-picker:
+    title: Emoji Selector
+    description: Easily copy and paste emoji and get the unicode and code points value of each emoji
+    emoji-copied-to-clipboard: Emoji copied to clipboard
+    code-points-copied-to-clipboard: Code point copied to clipboard
+    unicode-copied-to-clipboard: Unicode copied to clipboard
+    unicode-label: Unicode
+    search-emojis: Search for emojis (e. g. 'smile')...
+    no-results: no result
+    search-result: Search results
+
+  encryption:
+    title: Encrypting/Decrypting Text
+    description: Encrypt and decrypt plaintext using cryptographic algorithms such as AES, TripleDES, Rabbit, or RC4
+    encryption: encryption
+    decryption: decryption
+    your-text: your text
+    your-secret-key: your key
+    encryption-algorithm: encryption algorithm
+    your-text-encrypted: Your encrypted text
+    your-encrypted-text: Your encrypted text
+    your-decrypted-text: your decrypted text
+    error-while-decrypting: An error occurred while decrypting
+
+  eta-calculator:
+    title: ETA Calculator
+    description: ETA (Estimated Time of Arrival) calculator for knowing the approximate end time of a task
+    with-a-concrete-example: To give a specific example, if you wash 5 dishes in 3 minutes and you have 500 dishes to wash, it will take 5 hours to wash all the dishes.
+    amount-of-element-to-consume: the number of elements to be consumed
+    the-consumption-started-at: Time when consumption started
+    amount-of-unit-consumed-by-time-span: the number of units consumed in the time span
+    in: in
+    total-duration: total duration
+    it-will-end: will be
+    milliseconds: Milliseconds
+    seconds: seconds
+    minutes: minutes
+    hours: hours
+    days: days
+
+  hash-text:
+    title: Hash Text
+    description: Hash a text string using the desired function MD5, SHA1, SHA256, SHA224, SHA512, SHA384, SHA3, or RIPEMD160
+    label: input text
+    placeholder: String to be hashed...
+    select:
+      label: digest code
+      bin: binary
+      hex: hexadecimal
+      base64: Base64
+      base64-url: Base64 with URL safe characters
+      lowercase: Output results in lowercase
+      uppercase: output result uppercase
+
+  hmac-generator:
+    title: Hmac generator
+    description: Compute a hash-based message authentication code using the key and your favorite hash function
+    plain-text-to-compute-the-hash: need to calculate the hash of the plaintext
+    secret-key: key
+    hashing-function: hash function
+    output-encoding: output encoding
+    binary-base-2: binary
+    hexadecimal-base-16: hexadecimal
+    base64-base-64: Base64
+    base64-url-base-64-with-url-safe-chars: Base64 for URL safe characters
+    the-result-of-the-hmac: HMAC results
+    copy-hmac: Copy HMAC
+    placeholder-plain-text: Enter the plaintext that needs to be hashed...
+    placeholder-secret-key: Enter the key...
+    placeholder-hashing-function: Choose a hash function...
+    placeholder-output-encoding: Select output encoding...
+
+  html-entities:
+    title: Escape HTML Entities
+    description: Escape or reverse HTML entities (replace <,>, &, 'and \' with their HTML versions)
+    escape-html-entities: escaping HTML entities
+    unescape-html-entities: Inverse HTML Entities
+    your-string: your string
+    your-string-escaped: Your string has been escaped
+    your-escaped-string: your escaped string
+    your-string-unescaped: Your string has been reversed.
+    placeholder-string-to-escape: Enter the string to be escaped...
+    placeholder-string-to-unescape: Enter the string to be reversed...
+
+  html-wysiwyg-editor:
+    title: Rich Text Editor
+    description: Online HTML Editor With a feature-rich WYSIWYG editor, get the source code of your content immediately
+
+  http-status-codes:
+    title: HTTP status code
+    description: A list of all HTTP statuses with their names and meanings explained
+    search-http-status: Search HTTP Status...
+    category: Classification
+    code: status code
+    name: name
+    type: type
+    for: for
+    search-results: search results
+
+  iban-validator-and-parser:
+    title: IBAN Validators and Resolvers
+    description: Verify and analyze IBAN number, check if IBAN is valid, and obtain national BBAN
+    enter-an-iban-to-check-for-validity: Enter an IBAN to check its validity...
+    is-iban-valid: Is IBAN valid?
+    iban-errors: IBAN Error
+    is-iban-a-qr-iban: Is IBAN a QR-IBAN?
+    country-code: country code
+    bban: BBAN
+    iban-friendly-format: IBAN Friendly Format
+    valid-iban-examples: Valid IBAN Example
+    no-iban-provided: IBAN not provided
+    no-iban-country: No IBAN countries
+    wrong-bban-length: BBAN length error
+    wrong-bban-format: BBAN format error
+    checksum-not-number: Checksum is not a number
+    wrong-iban-checksum: IBAN checksum error
+    wrong-account-bank-branch-checksum: Account Bank Branch Checksum Error
+    qr-iban-not-allowed: QR-IBAN not allowed
+
+  base-converter:
+    title: Integer Base Converter
+    description: Convert numbers between different bases (decimal, hexadecimal, binary, octal, Base64...)
+    input-number: Enter a number
+    put-your-number-here: Please enter a number (eg. 42)
+    input-base: input base
+    put-your-input-base-here: Please enter a base number (eg. 10)
+    binary: binary
+    octal: octal
+    decimal: Decimal
+    hexadecimal: Hexadecimal
+    base64: Base64
+    custom: custom
+    base-will-be-here: the base will be displayed here...
+    error-message: An error occurred during conversion, please check the input
+
+  ipv4-address-converter:
+    title: IPv4 Address Translator
+    description: In IPv6, convert an IP address to decimal, binary, hexadecimal, or event
+    the-ipv4-address: Enter IPv4 address
+    placeholder-the-ipv4-address: Please enter IPv4 address...
+    decimal: Decimal
+    hexadecimal: Hexadecimal
+    binary: binary
+    ipv6: IPv6
+    ipv6-short: IPv6 (short)
+    set-a-correct-ipv4-address: Please set the correct IPv4 address
+    invalid-ipv4-address: Invalid IPv4 address
+
+  ipv4-range-expander:
+    title: IPv4 Range Extender
+    description: Given a starting and ending IPv4 address, this tool uses its CIDR notation to calculate a valid IPv4 network
+    start-address: start address
+    end-address: end address
+    placeholder-start-ipv4-address: Enter starting IPv4 address...
+    placeholder-end-ipv4-address: Enter End IPv4 Address...
+    invalid-ipv4-address: Invalid IPv4 address
+    invalid-combination-of-start-and-end-ipv4-address: Invalid start and end IPv4 address combination
+    the-end-ipv4-address-is-lower-than-the-start-ipv4-address: The end IPv4 address is lower than the start IPv4 address. This is invalid and the result cannot be calculated.
+    switch-start-and-end-ipv4-address: Switching Start and End IPv4 Addresses
+    old-value: old value
+    new-value: new value
+    start-address-label: start address
+    end-address-label: end address
+    addresses-in-range: Number of addresses in the range
+    cidr: CIDR
+
+  ipv4-subnet-calculator:
+    title: IPv4 Subnet Calculator
+    description: Parse the IPv4 CIDR block and get all the required information about the subnetwork
+    an-ipv4-address-with-or-without-mask: Enter an IPv4 address (with or without mask)
+    placeholder-the-ipv4-address: Enter IPv4 Address...
+    We-cannot-parse-this-address-check-the-format: Unable to resolve this address, please check the format
+    netmask: Subnet Mask
+    network-address: Network Address
+    network-mask: network mask
+    network-mask-in-binary: network mask (binary)
+    cidr-notation: CIDR notation
+    wildcard-mask: wildcard mask
+    network-size: network size
+    first-address: first address
+    last-address: last address
+    broadcast-address: Broadcast Address
+    no-broadcast-address-with-this-mask: No broadcast address under this mask
+    ip-class: IP Class
+    unknown-class-type: Unknown class type
+    previous-block: previous block
+    next-block: The next block
+
+  ipv6-ula-generator:
+    title: IPv6 ULA Generator
+    description: Generate your own local non-routable IP address on the network as RFC4193
+    info: information
+    random-ula: This tool uses the first method recommended by the IETF, which uses the current timestamp plus the MAC address, SHA1 hashed, and uses the low 40 bits to generate a random ULA.
+    mac-address: MAC address
+    type-a-mac-address: Enter MAC Address...
+    validation-message-invalid-mac-address: Invalid MAC Address
+    ipv6-ula: IPv6 ULA
+    first-routable-block: First routable block
+    last-routable-block: Last Routable Block
+
+  json:
+    title: JSON Editor
+    description: JSON data editing, compression, beautification
+    clearButton: Empty Editor Data
+    escapeButton: Escape JSON Data to String
+    restoreButton: Removing JSON String Escape
+
+  json-diff:
+    title: JSON Difference Comparison
+    description: Compare two JSON objects and get the difference between them
+    your-first-json: Your first JSON
+    placeholder-paste-your-first-json-here: Paste your first JSON...
+    your-json-to-compare: JSON to compare
+    placeholder-paste-your-json-to-compare-here: Paste the JSON you want to compare...
+    invalid-json-format: Invalid JSON format
+    only-show-differences: Show only differences
+    the-provided-jsons-are-the-same: The provided JSON is the same
+
+  json-to-csv:
+    title: JSON to CSV
+    description: Convert JSON format to CSV format
+    your-raw-json: Your raw JSON
+    placeholder-paste-your-raw-json-here: Paste your original JSON...
+    csv-version-of-your-json: CSV version of JSON
+    provided-json-is-not-valid: Invalid JSON provided
+
+  json-to-toml:
+    title: JSON to TOML
+    description: Parsing JSON and converting it to TOML
+    your-json: Your JSON
+    placeholder-paste-your-json-here: Paste your JSON...
+    toml-from-your-json: TOML from your JSON
+    provided-json-is-not-valid: Invalid JSON provided
+
+  json-to-xml:
+    title: JSON to XML
+    description: Parsing JSON and converting it to XML
+    your-json-content: Your JSON content
+    placeholder-paste-your-json-content-here: Paste your JSON content...
+    converted-xml: Transformed XML
+    provided-json-is-not-valid: Invalid JSON provided
+
+  json-to-yaml-converter:
+    title: JSON to YAML
+    description: Convert YAML to JSON online
+    your-json: Your JSON
+    placeholder-paste-your-json-here: Paste your JSON...
+    yaml-from-your-json: YAML from your JSON
+    provided-json-is-not-valid: Invalid JSON provided
+
+  jwt-parser:
+    title: JWT parser
+    description: Parsing and decoding a JSON Web Token(JWT) and displaying its contents
+    jwt-to-decode: JWT to be decoded
+    put-your-token-here: Paste your token here...
+    header: head
+    payload: loads
+    invalid-jwt: Invalid JWT
+
+  keycode-info:
+    title: Keycode information
+    description: Find the javascript key code, code, location, and modifier of any pressed key
+    key: key name
+    keycode: key code
+    code: code
+    location: Location
+    modifiers: Modifier Keys
+    press-key-instruction: Press the keyboard key you want to get the information
+    placeholder-key-name: Key name...
+    placeholder-keycode: key code...
+    placeholder-code: Code...
+    placeholder-location: location...
+    placeholder-modifiers: None
+
+  list-converter:
+    title: List Converter
+    description: The tool can work with array-based data and apply various changes (transpose, add prefix and suffix, reverse list, sorted list, lowercase value, truncation value) to each row
+    trim-list-items: remove blanks from list items
+    remove-duplicates: Remove duplicates
+    convert-to-lowercase: converting to lowercase
+    keep-line-breaks: Keep line breaks
+    sort-list: sort the list
+    sort-ascending: Ascending sort
+    sort-descending: sort descending
+    separator: separators
+    wrap-item: package list item
+    item-prefix: List Item Prefix
+    item-suffix: list item suffix
+    wrap-list: Wrap the entire list
+    list-prefix: list prefix
+    list-suffix: list suffix
+    your-input-data: your input data
+    paste-your-input-data-here: Paste your input data here...
+    your-transformed-data: the converted data
+
+  lorem-ipsum-generator:
+    title: random number fake text generator
+    description: A scrambled text is a 1 type of placeholder text, often used to present the visual form of a document or font without relying on meaningful content
+    paragraphs: number of paragraphs
+    sentences-per-paragraph: Number of sentences per paragraph
+    words-per-sentence: the number of words per sentence
+    start-with-lorem-ipsum: Starts with "Lorem ipsum"
+    as-html: as HTML output
+    your-lorem-ipsum: Your Lorem Ipsum text...
+    copy: Copy
+    refresh: Refresh
+
+  mac-address-generator:
+    title: MAC Address Generator
+    description: Enter the number and prefix MAC address will be generated in the case you choose (uppercase or lowercase)
+    quantity: Quantity
+    mac-address-prefix: MAC Address Prefix
+    case: case conversion
+    uppercase: uppercase
+    lowercase: lowercase
+    separator: separators
+    none: none
+    mac-addresses: MAC address
+    refresh: Refresh
+    copy: Copy
+
+  mac-address-lookup:
+    title: MAC Address Lookup
+    description: Find the vendor and manufacturer of a device by its MAC address
+    mac-address: MAC address
+    vendor-info: vendor information
+    copy-vendor-info: copy vendor information
+    unknown-vendor: unknown vendor
+
+  markdown-to-html:
+    title: Markdown to HTML
+    description: Convert Markdown to HTML and allow printing (PDF)
+    your-markdown-to-convert: Markdown you want to convert
+    output-html: outputting HTML
+    print-as-pdf: printing to PDF
+
+  math-evaluator:
+    title: mathematical calculator
+    description: Calculator for calculating mathematical expressions; you can use functions such as sqrt, cos, sin, abs, etc.
+    your-math-expression: Your mathematical expression
+    result: the result
+
+  og-meta-generator:
+    title: Open Graphics Meta-Builder
+    description: Generate open graphical and social HTML meta tags for your website
+
+  mime-types:
+    title: MIME type
+    description: Convert MIME types to extensions and vice versa.
+    mime-type-to-extension: MIME type to extension
+    know-extensions-associated-with-mime-type: Learn about file extensions associated with MIME types
+    select-your-mimetype-here: Please select your MIME type (eg. application/pdf)
+    extensions-of-files-with-mime-type: File extension <mimeType>
+    file-extension-to-mime-type: file extension to MIME type
+    know-mime-type-associated-with-extension: Learn about MIME types associated with file extensions
+    select-your-extension-here: Please select your file extension (for example:.pdf)
+    mime-type-associated-with-extension: The MIME type associated with the file extension <extension>
+    mime-types: MIME types
+    extensions: Extension
+    placeholder-select-mimetype: Please select your MIME type...
+    placeholder-select-extension: Please select your file extension...
+
+  numeronym-generator:
+    title: Number Name Generator
+    description: A numeric name is a word that uses numbers to form an abbreviation; for example, "i18n" is an "internationalized" noun, where 18 indicates the number of letters between the first I and the last n in the word
+    placeholder-input: Please enter a word such as 'internationalization'
+    placeholder-output: Your numeric abbreviation will be shown here, for example 'i18n'
+
+  otp-generator:
+    title: OTP Code Generator
+    description: Generate and validate time-based OTP (one-time password) for multi-factor authentication
+    secret-label: key
+    secret-placeholder: Paste your TOTP key...
+    generate-new-secret-tooltip: Generate a new random key
+    next-in: Next in {seconds}s
+    open-key-uri-new-tab: Open Key URI in new tab
+    secret-in-hex-label: hexadecimal key
+    epoch-label: timestamp (seconds)
+    iteration-count-label: iteration count
+    padded-hex-label: hex after padding
+    secret-in-hex-placeholder: The hex key will be shown here
+    epoch-placeholder: Timestamp (in seconds) will be shown here
+    iteration-count-placeholder: Iteration count will be shown here
+    padded-hex-placeholder: hex after padding will be shown here
+    previous: Previous
+    current-otp: Current OTP
+    Next: Next
+    copy-previous-otp: Copy Previous OTP
+    copy-current-otp: Copy the current OTP
+    copy-next-otp: Copy Next OTP
+    Copied: Copied!
+
+  password-strength-analyser:
+    title: Password Strength Analyzer
+    description: Use this password strength analyzer and time to crack estimation tool to discover the strength of your password
+    placeholder: Enter password...
+    crack-duration-title: Time required to brute-force crack this password
+    password-length: password length
+    entropy: entropy
+    character-set-size: character set size
+    score: score
+    Note: 'Note:'
+    computed-strength-note: The strength of the calculation is based on the time it takes to brute-force the password and does not take into account the possibility of a dictionary attack
+
+  pdf-signature-checker:
+    title: PDF Signature Checker
+    description: Verify the signature of a PDF file A signed PDF file contains one or more signatures that can be used to determine whether the contents of the file have been changed after signing
+    drag-and-drop: Drag a PDF file here, or click Select File
+    no-signatures-found: Signature not found in provided file
+    signature-certificates: Certificate with signature {index}
+    file-name: file name
+    file-size: file size
+    validity-period: validity period
+    not-before: not before
+    not-after: no later
+    issued-by: Issuer
+    common-name: common name
+    organization-name: Organization name
+    country-name: country name
+    locality-name: Region name
+    organizational-unit-name: organization unit name
+    state-or-province-name: State or province name
+    issued-to: issued
+    pem-certificate: PEM Certificate
+    view-pem-cert: Viewing PEM Certificates
+
+  percentage-calculator:
+    title: Percentage Calculator
+    description: Easily calculate percentage from one value to another, or percentage to value
+    what-is: What is
+    percent-of: what percentage
+    x-is-what-percent-of-y: What percentage of Y is X?
+    is-what-percent-of: what percentage
+    what-is-the-percentage-increase-decrease: What is the percentage increase/decrease
+    from: from
+    to: to
+    result: the result
+
+  phone-parser-and-formatter:
+    title: Phone Number Analyzer
+    description: Parse, validate and format phone numbers, get information about phone numbers such as country code, type, etc.
+    default-country-code: default country code
+    phone-number: phone number
+    country: Country
+    country-calling-code: country dialing code
+    is-valid: whether it is valid or not
+    is-possible: Is it possible
+    type: type
+    international-format: international format
+    national-format: national format
+    e164-format: E.164 format
+    rfc3966-format: RFC3966 format
+    invalid-phone-number: Invalid phone number
+    unknown: Unknown
+    Yes: Yes
+    no: no
+
+  qrcode-generator:
+    title: QR code generator
+    description: Generate and download QR code for url or text and customize background and foreground color
+    text: text
+    foreground-color: Foreground color
+    background-color: background color
+    error-resistance: error resistance level
+    download-qr-code: Download QR Code
+    your-link-or-text: your link or text...
+    low: low
+    medium: medium
+    quartile: 1/4
+    high: high
+
+  random-port-generator:
+    title: Random Port Generation
+    description: Generate a random port number outside the "well-known" port range (0-1023)
+    port: port
+    copy: Copy
+    port-copied-to-clipboard: Port copied to clipboard
+    refresh: Refresh
+
+  regex-tester:
+    title: Regular Expression Tester
+    description: Test a regular expression with sample text
+    regex-to-test: Regular Expression Test
+    put-the-regex-to-test: Enter the regular expression to test
+    global-search: global search
+    case-insensitive-search: case-insensitive search
+    multiline: Multiline Mode
+    singleline: single-line mode
+    unicode: Unicode mode
+    unicode-sets: Unicode collections
+    text-to-match: The text to match
+    put-the-text-to-match: Enter the text to match
+    matches: matching results
+    no-match: no match
+    sample-matching-text: sample matching text
+    regex-diagram: Regular Expression Illustration
+    index-in-text: index in text
+    value: value
+    captures: Capturing Groups
+    groups: grouping
+    invalid-regex: Invalid regular expression {0}
+
+  roman-numeral-converter:
+    title: Roman Digit Converter
+    description: Convert Roman Numerals to Numbers and Convert Numbers to Roman Numerals
+    arabic-to-roman: Arabic numerals to Roman numerals
+    roman-to-arabic: roman numerals to arabic numerals
+    input-arabic-number: Enter Arabic numerals
+    result: the result
+    copy-roman-number: copies roman numerals to the clipboard
+    copy-arabic-number: copy Arabic numerals to clipboard
+    we-can-only-convert-numbers-between: Only numbers between {0} and {1} can be converted
+    the-input-you-entered-is-not-a-valid-roman-number: Invalid Roman numeral entered
+
+  rsa-key-pair-generator:
+    title: RSA Key Pair Generator
+    description: Generate new random RSA private and public PEM certificates
+    bits: number of digits
+    bits-should-be: The number of bits should be between 256 and 16384 and be a multiple of 8.
+    refresh-key-pair: Refresh the key pair
+    public-key: public key
+    private-key: private key
+
+  safelink-decoder:
+    title: Secure Link Decoder
+    description: decoding Outlook secure links
+    input-outlook-safelink-url: Enter Outlook Safe Link URL
+    output-decoded-url: Output Decoded URL
+    invalid-safe-links-url: The supplied secure link URL is invalid
+
+  slugify-string:
+    title: Slug String
+    description: Secure string URLs, filenames, and IDs
+    your-string-to-slugify: The string you want to convert
+    put-your-string-here: Enter your string (eg. My file path)
+    your-slug: your slug
+    your-slug-will-be-generated-here: your Slug will be generated here (eg. my-file-path)
+    copy-slug: Copy Slug
+
+  sql-prettify:
+    title: SQL Beautification and Formatting
+    description: Format and beautify your SQL queries online (it supports various SQL dialects)
+    dialect: Dialect
+    keyword-case: keyword case
+    indent-style: indent style
+    your-sql-query: Your SQL Query
+    put-your-sql-query-here: Enter your SQL query...
+    prettify-version-of-your-query: formatted query version
+
+  string-obfuscator:
+    title: String Obfuscator
+    description: Obfuscate strings (such as secrets, IBANs, or tokens) to make them shareable and recognizable without revealing their contents
+    string-to-obfuscate: String to be obfuscated
+    enter-string-to-obfuscate: Enter the string to be obfuscated
+    Keep-first: Keep the top
+    keep-last: keep the last few
+    keep-spaces: keep spaces
+    obfuscated-string: Obfuscated string
+    copy-obfuscated-string: copy the obfuscated string
+
+  svg-placeholder-generator:
+    title: SVG Placeholder Generator
+    description: Generate SVG images to use as placeholders in your application
+    width-in-px: width (pixels)
+    height-in-px: height (pixels)
+    background: background color
+    text-color: text color
+    font-size: font size
+    custom-text: custom text
+    default-is-width-x-height: Default is {width}x{height}
+    use-exact-size: Use exact size
+    svg-html-element: SVG HTML elements
+    svg-in-base64: SVG Base64 encoding
+    copy-svg: copying SVG
+    copy-base64: Copy Base64
+    download-svg: Download SVG
+
+  temperature-converter:
+    title: Temperature Converter
+    description: Kelvin, Celsius, Fahrenheit, Rankin, Dreyer, Newton, Raymore and Romer temperature conversion degrees
+    kelvin: kelvin
+    celsius: degrees Celsius
+    fahrenheit: Fahrenheit
+    rankine: Rankin
+    delisle: Delier
+    newton: newton
+    reaumur: Lone
+    romer: romer
+    unit: unit
+
+  text-diff:
+    title: text comparison
+    description: Compare two texts and see the differences between them
+
+  text-statistics:
+    title: text statistics
+    description: Get information about text, number of characters, number of words, size, and more
+    character-count: number of characters
+    wordCount: number of words
+    lineCount: Number of rows
+    byteSize: number of bytes
+    placeholder: Enter your text...
+
+  text-to-binary:
+    title: Text to ASCII Binary
+    description: Convert text to its ASCII binary representation and vice versa
+    title-text-to-binary: text to ASCII binary
+    title-binary-to-text: ASCII binary-to-text
+    label-enter-text: Enter the text to convert to binary
+    label-binary-from-text: from the binary representation of your text
+    copy-binary-button-text: copy binary to clipboard
+    label-enter-binary: Enter the binary to convert to text
+    label-text-from-binary: Text representation from your binary
+    copy-text-button-text: copy text to the clipboard
+    placeholder-text: for example 'HelloWorld'
+    placeholder-binary: for example,'
+    validation-message: Binary should be an ASCII binary string that is a valid multiple of 8 bits
+
+  text-to-nato-alphabet:
+    Title: Text to NATO Alphabet
+    description: Text converted to NATO phonetic alphabet for oral transmission
+    label-your-text: Enter the text you want to convert to NATO phonetic alphabet
+    placeholder-your-text: Enter your text...
+    description-nato-text: Representation of your text in NATO phonetic letters
+    copy-nato-button-text: Copy NATO String
+    copied-message: NATO letter string copied
+
+  text-to-unicode:
+    title: text to Unicode
+    description: Parse text and convert it to Unicode or vice versa
+    title-text-to-unicode: text to Unicode
+    title-unicode-to-text: Unicode to text
+    label-enter-text: Enter the text you want to convert to Unicode
+    placeholder-enter-text: for example 'Hello Avengers'
+    label-unicode-from-text: Unicode representation from your text.
+    placeholder-unicode-from-text: The Unicode representation of your text will be shown here
+    copy-unicode-button-text: copying Unicode to the clipboard
+    label-enter-unicode: Enter Unicode to convert to text
+    placeholder-enter-unicode: input Unicode
+    label-text-from-unicode: Text representation from your Unicode
+    placeholder-text-from-unicode: A text representation of your Unicode will be shown here
+    copy-text-button-text: copy text to the clipboard
+
+  token-generator:
+    title: Token generator
+    description: Generate random strings with your desired characters, uppercase or lowercase letters, numbers and/or symbols
+    uppercase: Uppercase (ABC...)
+    lowercase: lowercase (abc...)
+    numbers: Number (123...)
+    symbols: symbol (!-;...)
+    length: length
+    token-placeholder: token...
+    copied: copy to clipboard
+    copy: Copy
+    refresh: Refresh
+
+  toml-to-json:
+    title: TOML to JSON
+    description: Parsing TOML and converting it to JSON
+    input-label: Enter your TOML
+    input-placeholder: Paste your TOML content...
+    output-label: JSON from your TOML
+    validation-message: Invalid TOML supplied
+
+  toml-to-yaml:
+    title: TOML to YAML
+    description: Parsing TOML and converting it to YAML
+    input-label: Enter your TOML
+    input-placeholder: Paste your TOML content...
+    output-label: YAML from your TOML
+    validation-message: Invalid TOML supplied
+
+  ulid-generator:
+    title: ULID Generator
+    description: Generate random universally unique lexicographic sortable identifiers (ULIDs)
+    quantity-label: quantity
+    format-label: format
+    refresh-button-text: Refresh
+    copy-button-text: copy
+    raw-format-label: original
+    json-format-label: JSON
+
+  url-encoder:
+    title: Encoding/Decoding URLs
+    description: encoding to or decoding from url-encoded format (also known as "percentage encoding")
+    title-encode: encoding
+    title-decode: decode
+    input-label-encode: input string
+    input-label-decode: Enter the encoded string
+    output-label-encode: the encoded string
+    output-label-decode: decoded string
+    copy-button-text: copy
+    validation-message: Cannot parse this string
+
+  url-parser:
+    title: URL Analyzer
+    description: Parse the URL string to get all the different parts (protocol, source, parameters, port, username password, etc.)
+    input-label: Enter the URL to parse
+    validation-message: Invalid URL
+    protocol: Agreement
+    username: Username
+    password: password
+    hostname: Host Name
+    port: port
+    path: the path
+    params: parameters
+    search-params-label: query parameters
+    params-row: Parameter Lines
+
+  user-agent-parser:
+    title: User Agent Analyzer
+    description: Detect and analyze browsers, engines, operating systems, CPUs, and devices from user agent strings
+    input-label: user agent string
+    sections-browser-heading: Browser
+    sections-browser-name: Name
+    sections-browser-version: Version
+    sections-cpu-heading: CPU
+    sections-cpu-architecture: architecture
+    sections-device-heading: Device
+    sections-device-model: model
+    sections-device-type: type
+    sections-device-vendor: vendor
+    sections-engine-heading: Engine
+    sections-engine-name: Name
+    sections-engine-version: Version
+    sections-OS-heading: operating system
+    sections-OS-name: name
+    sections-OS-version: Version
+    undefined-fallback: Information not available
+    empty-ua-fallback: Please enter user agent string
+
+  uuid-generator:
+    title: UUID Generator
+    description: A universally unique identifier (UUID) is a 128-digit number used to identify information in a computer system
+    uuid-version: UUID Version
+    quantity: Quantity
+    namespace: namespaces
+    name: name
+    copy-uuids: Copy UUID
+    refresh-uuids: Refresh UUID
+    your-uuids: Your UUID
+    placeholder-namespace: input namespace
+    placeholder-name: Enter a name
+    placeholder-quantity: Enter the UUID quantity
+
+  wifi-qrcode-generator:
+    title: WiFi QR Code Generator
+    description: Generate and download QR codes to quickly connect to WiFi networks
+    encryption-method: encryption method
+    ssid: SSID
+    hidden-ssid: Hide SSID
+    password: password
+    eap-method: EAP method
+    identity: Identity
+    anonymous: Anonymous
+    eap-phase2-method: EAP Phase II Approach
+    foreground-color: Foreground color
+    background-color: background color
+    download-qr-code: Download QR Code
+    your-wifi-ssid: Enter your WiFi SSID...
+    your-wifi-password: Enter your WiFi password...
+    your-eap-identity: Enter your EAP identity...
+    no-password: no password
+    wpa-wpa2: WPA/WPA2
+    wep: WEP
+    wpa2-eap: WPA2-EAP
+
+  xml:
+    title: XML Editor
+    description: Decorating an XML string into a friendly, readable format
+    indent-size: number of spaces indent
+    prettify-button: Formatting XML
+    minify-button: Compress XML
+    clear-button: Clear input
+    error-message: XML data format error.
+
+  xml-to-json:
+    title: XML to JSON
+    description: Parsing XML and converting it to JSON
+    your-xml-content: Your XML Content
+    paste-your-xml-content-here: Paste your XML content...
+    converted-json: Converted JSON
+    provided-xml-is-not-valid: Invalid XML provided
+
+  xslt:
+    title: XSLT Transformation Testing
+    description: Use XSLT to convert XM documents into other documents, such as JSON
+    xml-label: XML code
+    xslt-label: XSLT code
+    result-label: output the result
+    not-null: XML and XSLT input cannot be empty
+    error-xml: Invalid XML data
+    error-xslt: Invalid XSLT data
+
+  yaml-to-json-converter:
+    title: YAML to JSON
+    description: Parsing YAML and converting it to JSON
+    your-yaml: Your YAML
+    paste-your-yaml-here: Paste your YAML content...
+    json-from-your-yaml: Converted JSON
+    provided-yaml-is-not-valid: Invalid YAML provided
+
+  yaml-to-toml:
+    title: YAML to TOML
+    description: Parsing YAML and converting it to TOML
+    your-yaml: Your YAML
+    paste-your-yaml-here: Paste your YAML content...
+    toml-from-your-yaml: Converted TOML
+    provided-yaml-is-not-valid: Invalid YAML provided
+
+  yaml-viewer:
+    title: YAML Formatting
+    description: Decorating a YAML string into a friendly, readable format
+    sort-keys: sort keys
+    indent-size: indent size
+    your-raw-yaml: Your Original YAML
+    paste-your-raw-yaml-here: Paste your original YAML content...
+    prettified-version-of-your-yaml: Formatted YAML version
+    provided-yaml-is-not-valid: Invalid YAML provided
